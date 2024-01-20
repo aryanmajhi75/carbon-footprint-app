@@ -1,0 +1,14 @@
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/install/strip.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/install/local.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/install.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/list_install_components.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/rebuild_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/edit_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/CMakeFiles/carbon_footprint_app.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/install/strip.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/install/local.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/install.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/list_install_components.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/rebuild_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/edit_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/flutter_assemble.dir
