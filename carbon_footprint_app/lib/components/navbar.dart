@@ -1,3 +1,7 @@
+import 'package:carbon_footprint_app/pages/Eco.dart';
+import 'package:carbon_footprint_app/pages/Home.dart';
+import 'package:carbon_footprint_app/pages/Stat.dart';
+import 'package:carbon_footprint_app/pages/You.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget {
@@ -16,11 +20,11 @@ class _NavBarState extends State<NavBar> {
     });
   }
 
-  final List<Widget> _pages = [
-    // HomeScreen(),
-    // ExplorePage(),
-    // FavoritePage(),
-    // UserProfile(),
+  final List<Widget> _pages = const [
+    Home(),
+    Stat(),
+    Eco(),
+    You(),
   ];
 
   @override
