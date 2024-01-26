@@ -1,3 +1,5 @@
+import 'package:carbon_footprint_app/components/navbar.dart';
+import 'package:carbon_footprint_app/theme/themes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +11,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: darkMode,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home: const Scaffold(
         body: Center(
-          child: Text('Hello Anupan!'),
+          child: NavBar(),
         ),
       ),
     );
