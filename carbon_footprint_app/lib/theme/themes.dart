@@ -75,5 +75,14 @@ ThemeData lightMode = ThemeData(
   floatingActionButtonTheme: FloatingActionButtonThemeData(
     backgroundColor: LTsecondary().onIconBgCol,
     focusColor: DTprimary().onIconCol,
+    sizeConstraints: const BoxConstraints(
+      maxHeight: 50,
+      maxWidth: 50,
+      minHeight: 50,
+      minWidth: 50,
+    ),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(22),
+    ),
   ),
 );

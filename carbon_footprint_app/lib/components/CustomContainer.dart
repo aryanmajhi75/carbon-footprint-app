@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 class CustomContainer extends StatefulWidget {
   final double height;
   final double width;
+  final Color color;
   final Widget containerChild;
   const CustomContainer({
     super.key,
     required this.height,
     required this.width,
+    required this.color,
     required this.containerChild,
   });
 
@@ -22,10 +24,9 @@ class _CustomContainerState extends State<CustomContainer> {
     return Container(
       height: widget.height,
       width: widget.width,
-      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(22),
-        color: DTprimary().onContainer,
+        color: widget.color,
       ),
       child: Center(
         child: widget.containerChild,
