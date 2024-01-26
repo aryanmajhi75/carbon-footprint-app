@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 // const DTprimary = Color(0xff000000);
@@ -51,3 +52,21 @@ class LTsecondary {
 class ComponentData {
   Radius defRad = const Radius.circular(22);
 }
+
+List<FlSpot> list1Data = [
+  FlSpot(1, 460),
+  FlSpot(2, 350),
+  FlSpot(3, 670),
+  FlSpot(410, 520),
+  FlSpot(510, 180),
+  FlSpot(610, 90),
+];
+
+List<FlSpot> list2Data = [
+  FlSpot(110, 300),
+  FlSpot(210, 290),
+  FlSpot(310, 250),
+  FlSpot(410, 260),
+  FlSpot(510, 260),
+  FlSpot(610, 40),
+];

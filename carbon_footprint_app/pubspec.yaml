@@ -12,6 +12,7 @@ dependencies:
   appwrite: ^8.1.0
   gap: 
   flutter_animate: 
+  fl_chart: 
 
 dev_dependencies:
   flutter_test:
