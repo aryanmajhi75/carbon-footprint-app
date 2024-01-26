@@ -10,6 +10,8 @@ class You extends StatefulWidget {
 class _YouState extends State<You> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Column(),
+    );
   }
 }

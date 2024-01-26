@@ -98,6 +98,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_animate",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/flutter_animate-4.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
@@ -392,7 +398,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-01-26T10:24:49.356819Z",
+  "generated": "2024-01-26T10:37:01.802136Z",
   "generator": "pub",
   "generatorVersion": "3.2.2"
 }
