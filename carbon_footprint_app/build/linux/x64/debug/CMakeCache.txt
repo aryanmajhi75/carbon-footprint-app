@@ -238,6 +238,18 @@ runner_BINARY_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbo
 //Value Computed by CMake
 runner_SOURCE_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux
 
+//Value Computed by CMake
+url_launcher_linux_BINARY_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux
+
+//Value Computed by CMake
+url_launcher_linux_SOURCE_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux
+
+//Value Computed by CMake
+window_to_front_BINARY_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front
+
+//Value Computed by CMake
+window_to_front_SOURCE_DIR:STATIC=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux
+
 
 ########################
 # INTERNAL cache entries
@@ -325,7 +337,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
