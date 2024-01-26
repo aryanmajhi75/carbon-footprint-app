@@ -12,3 +12,17 @@
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/rebuild_cache.dir
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/edit_cache.dir
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter/CMakeFiles/flutter_assemble.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install/strip.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install/local.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/list_install_components.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/rebuild_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/edit_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/install/strip.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/install/local.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/install.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/list_install_components.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/rebuild_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/edit_cache.dir
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir

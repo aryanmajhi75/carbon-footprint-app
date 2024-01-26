@@ -101,37 +101,31 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for carbon_footprint_app
 
-build cmake_object_order_depends_target_carbon_footprint_app: phony || flutter/flutter_assemble
+build cmake_object_order_depends_target_carbon_footprint_app: phony || cmake_object_order_depends_target_url_launcher_linux_plugin cmake_object_order_depends_target_window_to_front_plugin flutter/flutter_assemble
 
 build CMakeFiles/carbon_footprint_app.dir/main.cc.o: CXX_COMPILER__carbon_footprint_app /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/main.cc || cmake_object_order_depends_target_carbon_footprint_app
   DEFINES = -DAPPLICATION_ID=\"com.example.carbon_footprint_app\"
   DEP_FILE = CMakeFiles/carbon_footprint_app.dir/main.cc.o.d
   FLAGS = -g   -Wall -Werror -pthread
-  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
+  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/include -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
   OBJECT_DIR = CMakeFiles/carbon_footprint_app.dir
   OBJECT_FILE_DIR = CMakeFiles/carbon_footprint_app.dir
-  TARGET_COMPILE_PDB = CMakeFiles/carbon_footprint_app.dir/
-  TARGET_PDB = intermediates_do_not_run/carbon_footprint_app.pdb
 
 build CMakeFiles/carbon_footprint_app.dir/my_application.cc.o: CXX_COMPILER__carbon_footprint_app /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/my_application.cc || cmake_object_order_depends_target_carbon_footprint_app
   DEFINES = -DAPPLICATION_ID=\"com.example.carbon_footprint_app\"
   DEP_FILE = CMakeFiles/carbon_footprint_app.dir/my_application.cc.o.d
   FLAGS = -g   -Wall -Werror -pthread
-  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
+  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/include -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
   OBJECT_DIR = CMakeFiles/carbon_footprint_app.dir
   OBJECT_FILE_DIR = CMakeFiles/carbon_footprint_app.dir
-  TARGET_COMPILE_PDB = CMakeFiles/carbon_footprint_app.dir/
-  TARGET_PDB = intermediates_do_not_run/carbon_footprint_app.pdb
 
 build CMakeFiles/carbon_footprint_app.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILER__carbon_footprint_app /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugin_registrant.cc || cmake_object_order_depends_target_carbon_footprint_app
   DEFINES = -DAPPLICATION_ID=\"com.example.carbon_footprint_app\"
   DEP_FILE = CMakeFiles/carbon_footprint_app.dir/flutter/generated_plugin_registrant.cc.o.d
   FLAGS = -g   -Wall -Werror -pthread
-  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
+  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/include -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
   OBJECT_DIR = CMakeFiles/carbon_footprint_app.dir
   OBJECT_FILE_DIR = CMakeFiles/carbon_footprint_app.dir/flutter
-  TARGET_COMPILE_PDB = CMakeFiles/carbon_footprint_app.dir/
-  TARGET_PDB = intermediates_do_not_run/carbon_footprint_app.pdb
 
 
 # =============================================================================
@@ -141,17 +135,15 @@ build CMakeFiles/carbon_footprint_app.dir/flutter/generated_plugin_registrant.cc
 #############################################
 # Link the executable intermediates_do_not_run/carbon_footprint_app
 
-build intermediates_do_not_run/carbon_footprint_app: CXX_EXECUTABLE_LINKER__carbon_footprint_app CMakeFiles/carbon_footprint_app.dir/main.cc.o CMakeFiles/carbon_footprint_app.dir/my_application.cc.o CMakeFiles/carbon_footprint_app.dir/flutter/generated_plugin_registrant.cc.o | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+build intermediates_do_not_run/carbon_footprint_app: CXX_EXECUTABLE_LINKER__carbon_footprint_app CMakeFiles/carbon_footprint_app.dir/main.cc.o CMakeFiles/carbon_footprint_app.dir/my_application.cc.o CMakeFiles/carbon_footprint_app.dir/flutter/generated_plugin_registrant.cc.o | plugins/url_launcher_linux/liburl_launcher_linux_plugin.so plugins/window_to_front/libwindow_to_front_plugin.so /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble plugins/url_launcher_linux/liburl_launcher_linux_plugin.so plugins/window_to_front/libwindow_to_front_plugin.so
   FLAGS = -g
   LINK_FLAGS = -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig
-  LINK_LIBRARIES = -Wl,-rpath,/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral:  -lflutter_linux_gtk  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so
-  LINK_PATH = -L/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral
+  LINK_LIBRARIES = -Wl,-rpath,/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux:/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front:/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral:  plugins/url_launcher_linux/liburl_launcher_linux_plugin.so  plugins/window_to_front/libwindow_to_front_plugin.so  /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so
   OBJECT_DIR = CMakeFiles/carbon_footprint_app.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/carbon_footprint_app.dir/
   TARGET_FILE = intermediates_do_not_run/carbon_footprint_app
-  TARGET_PDB = intermediates_do_not_run/carbon_footprint_app.pdb
+  TARGET_PDB = carbon_footprint_app.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -245,11 +237,233 @@ build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/lin
   restat = 1
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build plugins/url_launcher_linux/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build plugins/url_launcher_linux/install/strip: phony plugins/url_launcher_linux/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install/local
+
+build plugins/url_launcher_linux/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build plugins/url_launcher_linux/install/local: phony plugins/url_launcher_linux/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install
+
+build plugins/url_launcher_linux/CMakeFiles/install.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build plugins/url_launcher_linux/install: phony plugins/url_launcher_linux/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build plugins/url_launcher_linux/list_install_components: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build plugins/url_launcher_linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build plugins/url_launcher_linux/rebuild_cache: phony plugins/url_launcher_linux/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build plugins/url_launcher_linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build plugins/url_launcher_linux/edit_cache: phony plugins/url_launcher_linux/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target url_launcher_linux_plugin
+
+
+#############################################
+# Order-only phony target for url_launcher_linux_plugin
+
+build cmake_object_order_depends_target_url_launcher_linux_plugin: phony || flutter/flutter_assemble
+
+build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o: CXX_COMPILER__url_launcher_linux_plugin /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/url_launcher_plugin.cc || cmake_object_order_depends_target_url_launcher_linux_plugin
+  DEFINES = -DAPPLICATION_ID=\"com.example.carbon_footprint_app\" -DFLUTTER_PLUGIN_IMPL -Durl_launcher_linux_plugin_EXPORTS
+  DEP_FILE = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o.d
+  FLAGS = -g -fPIC -fvisibility=hidden   -Wall -Werror -pthread
+  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
+  OBJECT_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+  OBJECT_FILE_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target url_launcher_linux_plugin
+
+
+#############################################
+# Link the shared library plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+
+build plugins/url_launcher_linux/liburl_launcher_linux_plugin.so: CXX_SHARED_LIBRARY_LINKER__url_launcher_linux_plugin plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_FLAGS = -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig
+  LINK_LIBRARIES = -Wl,-rpath,/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral  /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  OBJECT_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = liburl_launcher_linux_plugin.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+  TARGET_PDB = url_launcher_linux_plugin.so.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build plugins/window_to_front/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/window_to_front/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build plugins/window_to_front/install/strip: phony plugins/window_to_front/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install/local
+
+build plugins/window_to_front/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/window_to_front/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build plugins/window_to_front/install/local: phony plugins/window_to_front/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install
+
+build plugins/window_to_front/CMakeFiles/install.util: CUSTOM_COMMAND plugins/window_to_front/all
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build plugins/window_to_front/install: phony plugins/window_to_front/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build plugins/window_to_front/list_install_components: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build plugins/window_to_front/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build plugins/window_to_front/rebuild_cache: phony plugins/window_to_front/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build plugins/window_to_front/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build plugins/window_to_front/edit_cache: phony plugins/window_to_front/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target window_to_front_plugin
+
+
+#############################################
+# Order-only phony target for window_to_front_plugin
+
+build cmake_object_order_depends_target_window_to_front_plugin: phony || flutter/flutter_assemble
+
+build plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir/window_to_front_plugin.cc.o: CXX_COMPILER__window_to_front_plugin /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/window_to_front_plugin.cc || cmake_object_order_depends_target_window_to_front_plugin
+  DEFINES = -DAPPLICATION_ID=\"com.example.carbon_footprint_app\" -DFLUTTER_PLUGIN_IMPL -Dwindow_to_front_plugin_EXPORTS
+  DEP_FILE = plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir/window_to_front_plugin.cc.o.d
+  FLAGS = -g -fPIC -fvisibility=hidden   -Wall -Werror -pthread
+  INCLUDES = -I/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral -isystem /snap/flutter/current/usr/include/gtk-3.0 -isystem /snap/flutter/current/usr/include/at-spi2-atk/2.0 -isystem /snap/flutter/current/usr/include/at-spi-2.0 -isystem /snap/flutter/current/usr/include/dbus-1.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/dbus-1.0/include -isystem /snap/flutter/current/usr/include/gio-unix-2.0 -isystem /snap/flutter/current/usr/include/cairo -isystem /snap/flutter/current/usr/include/pango-1.0 -isystem /snap/flutter/current/usr/include/fribidi -isystem /snap/flutter/current/usr/include/harfbuzz -isystem /snap/flutter/current/usr/include/atk-1.0 -isystem /snap/flutter/current/usr/include/pixman-1 -isystem /snap/flutter/current/usr/include/uuid -isystem /snap/flutter/current/usr/include/freetype2 -isystem /snap/flutter/current/usr/include/libpng16 -isystem /snap/flutter/current/usr/include/gdk-pixbuf-2.0 -isystem /snap/flutter/current/usr/include/libmount -isystem /snap/flutter/current/usr/include/blkid -isystem /snap/flutter/current/usr/include/glib-2.0 -isystem /snap/flutter/current/usr/lib/x86_64-linux-gnu/glib-2.0/include
+  OBJECT_DIR = plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir
+  OBJECT_FILE_DIR = plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target window_to_front_plugin
+
+
+#############################################
+# Link the shared library plugins/window_to_front/libwindow_to_front_plugin.so
+
+build plugins/window_to_front/libwindow_to_front_plugin.so: CXX_SHARED_LIBRARY_LINKER__window_to_front_plugin plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir/window_to_front_plugin.cc.o | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_FLAGS = -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig -B/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -B/snap/flutter/current/usr/lib/x86_64-linux-gnu -B/snap/flutter/current/lib/x86_64-linux-gnu -B/snap/flutter/current/usr/lib/ -L/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/9 -L/snap/flutter/current/usr/lib/x86_64-linux-gnu -L/snap/flutter/current/lib/x86_64-linux-gnu -L/snap/flutter/current/usr/lib/ -lblkid -lgcrypt -llzma -llz4 -lgpg-error -luuid -lpthread -ldl -lepoxy -lfontconfig
+  LINK_LIBRARIES = -Wl,-rpath,/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral  /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgtk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk-3.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libpango-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libharfbuzz.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libatk-1.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libcairo.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgio-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /snap/flutter/current/usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  OBJECT_DIR = plugins/window_to_front/CMakeFiles/window_to_front_plugin.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libwindow_to_front_plugin.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = plugins/window_to_front/libwindow_to_front_plugin.so
+  TARGET_PDB = window_to_front_plugin.so.dbg
+
+# =============================================================================
 # Target aliases.
 
 build carbon_footprint_app: phony intermediates_do_not_run/carbon_footprint_app
 
 build flutter_assemble: phony flutter/flutter_assemble
+
+build liburl_launcher_linux_plugin.so: phony plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+
+build libwindow_to_front_plugin.so: phony plugins/window_to_front/libwindow_to_front_plugin.so
+
+build url_launcher_linux_plugin: phony plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+
+build window_to_front_plugin: phony plugins/window_to_front/libwindow_to_front_plugin.so
 
 # =============================================================================
 # Folder targets.
@@ -259,7 +473,7 @@ build flutter_assemble: phony flutter/flutter_assemble
 #############################################
 # Folder: /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
 
-build all: phony intermediates_do_not_run/carbon_footprint_app flutter/all
+build all: phony intermediates_do_not_run/carbon_footprint_app flutter/all plugins/url_launcher_linux/all plugins/window_to_front/all
 
 # =============================================================================
 
@@ -267,6 +481,20 @@ build all: phony intermediates_do_not_run/carbon_footprint_app flutter/all
 # Folder: /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter
 
 build flutter/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux
+
+build plugins/url_launcher_linux/all: phony plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+
+# =============================================================================
+
+#############################################
+# Folder: /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front
+
+build plugins/window_to_front/all: phony plugins/window_to_front/libwindow_to_front_plugin.so
 
 # =============================================================================
 # Built-in targets
@@ -280,14 +508,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-FindBinUtils.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-FindBinUtils.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################
