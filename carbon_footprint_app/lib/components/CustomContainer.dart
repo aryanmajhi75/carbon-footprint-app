@@ -28,9 +28,7 @@ class _CustomContainerState extends State<CustomContainer> {
         borderRadius: BorderRadius.circular(22),
         color: widget.color,
       ),
-      child: Center(
-        child: widget.containerChild,
-      ),
+      child: widget.containerChild,
     );
   }
 }
