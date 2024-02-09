@@ -55,19 +55,19 @@ class ComponentData {
 }
 
 List<FlSpot> list1Data = [
-  FlSpot(1, 460),
-  FlSpot(2, 350),
-  FlSpot(3, 670),
-  FlSpot(4, 520),
-  FlSpot(5, 180),
-  FlSpot(6, 90),
+  const FlSpot(1, 460),
+  const FlSpot(2, 350),
+  const FlSpot(3, 670),
+  const FlSpot(4, 520),
+  const FlSpot(5, 180),
+  const FlSpot(6, 90),
 ];
 
 List<FlSpot> list2Data = [
-  FlSpot(1, 300),
-  FlSpot(2, 290),
-  FlSpot(3, 250),
-  FlSpot(4, 260),
-  FlSpot(5, 260),
-  FlSpot(6, 40),
+  const FlSpot(1, 300),
+  const FlSpot(2, 290),
+  const FlSpot(3, 250),
+  const FlSpot(4, 260),
+  const FlSpot(5, 260),
+  const FlSpot(6, 40),
 ];

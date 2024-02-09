@@ -72,7 +72,7 @@ class _StatState extends State<Stat> {
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Gap(screenHeight * 0.02),
-                Text(
+                const Text(
                   "Model Paramter Comparison",
                   style: TextStyle(
                     color: Colors.white,
@@ -167,7 +167,7 @@ class _StatState extends State<Stat> {
                   ),
                 ),
                 Gap(screenHeight * 0.02),
-                Text(
+                const Text(
                   "Monthly Footprint",
                   style: TextStyle(
                     color: Colors.white,
@@ -263,7 +263,7 @@ class _StatState extends State<Stat> {
                   ),
                 ),
                 Gap(screenHeight * 0.02),
-                Text(
+                const Text(
                   "Monthly Footprint",
                   style: TextStyle(
                     color: Colors.white,

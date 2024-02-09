@@ -48,7 +48,7 @@ class _EcoState extends State<Eco> {
               ),
             ),
             Gap(screenHeight * 0.02),
-            Text(
+            const Text(
               "Reduce footprint at home",
               style: TextStyle(
                 color: Colors.white,
@@ -69,7 +69,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -79,7 +79,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     maxLines: 2,
                                     "Tidbyt",
                                     style: TextStyle(
@@ -91,9 +91,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),
@@ -110,7 +110,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -120,7 +120,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     maxLines: 2,
                                     "Watch Roll Iron",
                                     style: TextStyle(
@@ -132,9 +132,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),
@@ -147,7 +147,7 @@ class _EcoState extends State<Eco> {
               ),
             ),
             Gap(screenHeight * 0.02),
-            Text(
+            const Text(
               "Reduce footprint on the go",
               style: TextStyle(
                 color: Colors.white,
@@ -168,7 +168,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -178,7 +178,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     maxLines: 2,
                                     "Tata Nexon EV",
                                     style: TextStyle(
@@ -190,9 +190,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),
@@ -209,7 +209,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -219,7 +219,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     maxLines: 2,
                                     "Ather 450X EV",
                                     style: TextStyle(
@@ -231,9 +231,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),
@@ -246,7 +246,7 @@ class _EcoState extends State<Eco> {
               ),
             ),
             Gap(screenHeight * 0.02),
-            Text(
+            const Text(
               "Reduce footprint from appliances",
               style: TextStyle(
                 color: Colors.white,
@@ -267,7 +267,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -277,7 +277,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     "Beko Washing Machine",
                                     maxLines: 2,
                                     style: TextStyle(
@@ -289,9 +289,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),
@@ -308,7 +308,7 @@ class _EcoState extends State<Eco> {
                         padding: EdgeInsets.all(screenHeight * 0.01),
                         child: Row(
                           children: [
-                            Placeholder(
+                            const Placeholder(
                               fallbackHeight: 142,
                               fallbackWidth: 142,
                             ),
@@ -318,7 +318,7 @@ class _EcoState extends State<Eco> {
                               children: [
                                 SizedBox(
                                   width: screenWidth * 0.25,
-                                  child: Text(
+                                  child: const Text(
                                     maxLines: 2,
                                     "LG Eco Refrigerator",
                                     style: TextStyle(
@@ -330,9 +330,9 @@ class _EcoState extends State<Eco> {
                                 ),
                                 FloatingActionButton(
                                   onPressed: () {},
+                                  shape: const CircleBorder(),
                                   child:
                                       Image.asset("assets/icons/moreinfo.png"),
-                                  shape: CircleBorder(),
                                 ),
                               ],
                             ),

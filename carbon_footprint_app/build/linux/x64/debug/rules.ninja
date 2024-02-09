@@ -80,7 +80,7 @@ rule CXX_SHARED_LIBRARY_LINKER__window_to_front_plugin
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  command = /var/lib/snapd/snap/flutter/145/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
   description = Re-running CMake...
   generator = 1
 

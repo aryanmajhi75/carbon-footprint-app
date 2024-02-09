@@ -1,7 +1,6 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:gap/gap.dart';
 
 class Home extends StatefulWidget {
@@ -50,7 +49,7 @@ class _HomeState extends State<Home> {
                 Positioned(
                   top: screenHeight * 0.1,
                   left: screenWidth * 0.15,
-                  child: Column(
+                  child: const Column(
                     children: [
                       Text(
                         "250 K",
@@ -89,7 +88,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Gap(screenWidth * 0.02),
-                  CustomContainer(
+                  const CustomContainer(
                     height: 90,
                     width: 280,
                     color: Colors.transparent,

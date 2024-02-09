@@ -6,7 +6,7 @@ ThemeData darkMode = ThemeData(
   useMaterial3: true,
   scaffoldBackgroundColor: DTprimary().onBody,
   fontFamily: 'Quicksand',
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
       // displayMedium: TextStyle(
       //   color: spotifyWhite,
       //   decoration: TextDecoration.none,
@@ -39,7 +39,7 @@ ThemeData lightMode = ThemeData(
     background: LTprimary().onBody,
     brightness: Brightness.dark,
   ),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
       // displayMedium: TextStyle(
       //   color: spotifyWhite,
       //   decoration: TextDecoration.none,

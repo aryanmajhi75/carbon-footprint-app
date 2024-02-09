@@ -1,7 +1,6 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:gap/gap.dart';
 
 class You extends StatefulWidget {
@@ -41,7 +40,7 @@ class _YouState extends State<You> {
                     width: 100,
                   ),
                   Gap(screenHeight * 0.01),
-                  Text(
+                  const Text(
                     "Hi Aryan",
                     style: TextStyle(
                       color: Colors.white,
@@ -61,7 +60,7 @@ class _YouState extends State<You> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "User Bio",
                         style: TextStyle(
                           color: Colors.white,
@@ -74,21 +73,21 @@ class _YouState extends State<You> {
                         thickness: 2,
                         color: DTprimary().onBody,
                       ),
-                      Text(
+                      const Text(
                         "Gender : Male",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Age : 35",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "User Diet",
                         style: TextStyle(
                           color: Colors.white,
@@ -101,14 +100,14 @@ class _YouState extends State<You> {
                         thickness: 2,
                         color: DTprimary().onBody,
                       ),
-                      Text(
+                      const Text(
                         "Meat Comsumption : Sometimes",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Dairy Consumption : Sometimes",
                         style: TextStyle(
                           color: Colors.white,
@@ -126,7 +125,7 @@ class _YouState extends State<You> {
                 thickness: 3,
                 color: DTprimary().onContainer,
               ),
-              Text(
+              const Text(
                 "Your Vehicles",
                 style: TextStyle(
                   color: Colors.white,
@@ -146,7 +145,7 @@ class _YouState extends State<You> {
                           fallbackWidth: screenWidth * 0.45,
                         ),
                         Gap(screenWidth * 0.03),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

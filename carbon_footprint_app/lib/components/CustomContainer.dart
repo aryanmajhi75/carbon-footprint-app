@@ -1,4 +1,3 @@
-import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatefulWidget {

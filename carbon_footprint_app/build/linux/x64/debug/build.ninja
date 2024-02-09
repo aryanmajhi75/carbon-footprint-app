@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -46,7 +46,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -58,7 +58,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -76,7 +76,7 @@ build list_install_components: phony
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -88,7 +88,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -155,7 +155,7 @@ build intermediates_do_not_run/carbon_footprint_app: CXX_EXECUTABLE_LINKER__carb
 # Utility command for install/strip
 
 build flutter/CMakeFiles/install/strip.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -167,7 +167,7 @@ build flutter/install/strip: phony flutter/CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build flutter/CMakeFiles/install/local.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -179,7 +179,7 @@ build flutter/install/local: phony flutter/CMakeFiles/install/local.util
 # Utility command for install
 
 build flutter/CMakeFiles/install.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -197,7 +197,7 @@ build flutter/list_install_components: phony
 # Utility command for rebuild_cache
 
 build flutter/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -209,7 +209,7 @@ build flutter/rebuild_cache: phony flutter/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build flutter/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -232,7 +232,7 @@ build flutter/CMakeFiles/flutter_assemble: phony /home/saruo/Documents/GitHub/ca
 # Custom command for /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so
 
 build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E env FLUTTER_ROOT=/home/saruo/snap/flutter/common/flutter PROJECT_DIR=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9jZjdhOWQwODAwZjJhNWRhMTY2ZGJlMGViOWZiMjQ3NjAxODI2OWIxLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/.dart_tool/package_config.json FLUTTER_TARGET=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/lib/main.dart /home/saruo/snap/flutter/common/flutter/packages/flutter_tools/bin/tool_backend.sh linux-x64 Debug
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/flutter && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -E env FLUTTER_ROOT=/home/saruo/snap/flutter/common/flutter PROJECT_DIR=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9mNDBlOTc2YmVkZmY1N2U2OWUxYjNkODlhN2MyYTNjNjE3YTAzZGFkLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/.dart_tool/package_config.json FLUTTER_TARGET=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/lib/main.dart /home/saruo/snap/flutter/common/flutter/packages/flutter_tools/bin/tool_backend.sh linux-x64 Debug
   DESC = Generating /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/libflutter_linux_gtk.so, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_engine.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_call.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_method_response.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_value.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/fl_view.h, /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/flutter_linux/flutter_linux.h, _phony_
   restat = 1
 
@@ -246,7 +246,7 @@ build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/lin
 # Utility command for install/strip
 
 build plugins/url_launcher_linux/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -258,7 +258,7 @@ build plugins/url_launcher_linux/install/strip: phony plugins/url_launcher_linux
 # Utility command for install/local
 
 build plugins/url_launcher_linux/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -270,7 +270,7 @@ build plugins/url_launcher_linux/install/local: phony plugins/url_launcher_linux
 # Utility command for install
 
 build plugins/url_launcher_linux/CMakeFiles/install.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -288,7 +288,7 @@ build plugins/url_launcher_linux/list_install_components: phony
 # Utility command for rebuild_cache
 
 build plugins/url_launcher_linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -300,7 +300,7 @@ build plugins/url_launcher_linux/rebuild_cache: phony plugins/url_launcher_linux
 # Utility command for edit_cache
 
 build plugins/url_launcher_linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/url_launcher_linux && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -353,7 +353,7 @@ build plugins/url_launcher_linux/liburl_launcher_linux_plugin.so: CXX_SHARED_LIB
 # Utility command for install/strip
 
 build plugins/window_to_front/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/window_to_front/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -365,7 +365,7 @@ build plugins/window_to_front/install/strip: phony plugins/window_to_front/CMake
 # Utility command for install/local
 
 build plugins/window_to_front/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/window_to_front/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -377,7 +377,7 @@ build plugins/window_to_front/install/local: phony plugins/window_to_front/CMake
 # Utility command for install
 
 build plugins/window_to_front/CMakeFiles/install.util: CUSTOM_COMMAND plugins/window_to_front/all
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -395,7 +395,7 @@ build plugins/window_to_front/list_install_components: phony
 # Utility command for rebuild_cache
 
 build plugins/window_to_front/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -S/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux -B/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -407,7 +407,7 @@ build plugins/window_to_front/rebuild_cache: phony plugins/window_to_front/CMake
 # Utility command for edit_cache
 
 build plugins/window_to_front/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/141/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/plugins/window_to_front && /var/lib/snapd/snap/flutter/145/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -508,14 +508,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/141/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front/linux/CMakeLists.txt /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/ephemeral/generated_config.cmake /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/linux/flutter/generated_plugins.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/Clang-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/Clang.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/FindPkgConfig.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-Clang-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/Linux.cmake /var/lib/snapd/snap/flutter/145/usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################
