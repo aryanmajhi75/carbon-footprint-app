@@ -13,6 +13,7 @@ dependencies:
   gap: 
   flutter_animate: 
   fl_chart: 
+  mongo_dart: 
 
 dev_dependencies:
   flutter_test:
