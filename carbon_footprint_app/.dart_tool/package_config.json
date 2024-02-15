@@ -14,10 +14,28 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "basic_utils",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/basic_utils-5.5.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "bson",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/bson-5.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "buffer",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/buffer-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "characters",
@@ -44,6 +62,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "convert",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "cookie_jar",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/cookie_jar-3.0.1",
       "packageUri": "lib/",
@@ -60,6 +84,12 @@
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/csslib-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "decimal",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/decimal-2.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "device_info_plus",
@@ -96,6 +126,12 @@
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/file-6.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "fixnum",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "fl_chart",
@@ -170,10 +206,28 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "js",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/js-0.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/json_annotation-4.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "matcher",
@@ -194,6 +248,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mongo_dart",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/mongo_dart-0.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "mongo_dart_query",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/mongo_dart_query-5.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "package_info_plus",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/package_info_plus-3.1.2",
       "packageUri": "lib/",
@@ -202,6 +268,12 @@
     {
       "name": "package_info_plus_platform_interface",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/package_info_plus_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "packages_extensions",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/packages_extensions-0.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -248,6 +320,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "pedantic",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/pedantic-1.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "platform",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/platform-3.1.4",
       "packageUri": "lib/",
@@ -260,6 +338,42 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "pointycastle",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/pointycastle-3.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "pool",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "power_extensions",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/power_extensions-0.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "rational",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/rational-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "sasl_scram",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/sasl_scram-0.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "saslprep",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/saslprep-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///home/saruo/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -270,6 +384,12 @@
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "sprintf",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/sprintf-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "stack_trace",
@@ -320,6 +440,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "unorm_dart",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/unorm_dart-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "url_launcher",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/url_launcher-6.2.3",
       "packageUri": "lib/",
@@ -368,10 +494,22 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "uuid",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/uuid-4.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "vy_string_utils",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/vy_string_utils-0.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "web",
@@ -410,7 +548,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-01-28T07:41:29.326720Z",
+  "generated": "2024-02-13T06:46:25.325078Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
