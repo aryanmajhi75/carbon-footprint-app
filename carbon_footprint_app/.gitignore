@@ -30,7 +30,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-
+.C:\Users\Anupam Kumar\Documents\GitHub\carbon-footprint-app\carbon_footprint_app\.dart_tool\package_config.json
+/C:\Users\Anupam Kumar\Documents\GitHub\carbon-footprint-app\carbon_footprint_app\.dart_tool\package_config_subset
 # Symbolication related
 app.*.symbols
 
