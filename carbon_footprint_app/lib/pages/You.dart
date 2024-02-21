@@ -1,4 +1,5 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
+import 'package:carbon_footprint_app/components/CustomUserDataCard.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -28,171 +29,110 @@ class _YouState extends State<You> {
       body: SafeArea(
         child: Padding(
           padding: ComponentData().defPad,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Image.asset(
-                    "assets/icons/profile.png",
-                    height: 100,
-                    width: 100,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  "Aryan's",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
                   ),
-                  Gap(screenHeight * 0.01),
-                  const Text(
-                    "Hi Aryan",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                    ),
+                ),
+
+                // CustomUserDataCard(
+                //   title: "Bio",
+                //   subtitle1: "Gender",
+                //   data1: "Male",
+                //   subtitle2: "Age",
+                //   data2: 22.toString(),
+                // ),
+                // Gap(screenHeight * 0.01),
+                // CustomUserDataCard(
+                //   title: "Diet",
+                //   subtitle1: "Milk",
+                //   data1: "Sometimes",
+                //   subtitle2: "Meat",
+                //   data2: "Sometimes",
+                // ),
+                Gap(screenHeight * 0.01),
+                const Text(
+                  "Vehicles",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
                   ),
-                ],
-              ),
-              CustomContainer(
-                height: screenHeight * 0.35,
-                width: screenWidth * 0.9,
-                color: DTprimary().onContainer,
-                containerChild: Padding(
-                  padding: ComponentData().defPad,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                ),
+                Gap(screenHeight * 0.01),
+                CustomContainer(
+                  height: screenHeight * 0.2,
+                  width: screenWidth * 0.9,
+                  color: DTprimary().onContainer,
+                  containerChild: Column(
                     children: [
-                      const Text(
-                        "User Bio",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 50,
-                        ),
-                      ),
-                      Divider(
-                        endIndent: 20,
-                        indent: 20,
-                        thickness: 2,
-                        color: DTprimary().onBody,
-                      ),
-                      const Text(
-                        "Gender : Male",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                      const Text(
-                        "Age : 35",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                      const Text(
-                        "User Diet",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 50,
-                        ),
-                      ),
-                      Divider(
-                        endIndent: 20,
-                        indent: 20,
-                        thickness: 2,
-                        color: DTprimary().onBody,
-                      ),
-                      const Text(
-                        "Meat Comsumption : Sometimes",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                      const Text(
-                        "Dairy Consumption : Sometimes",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: ComponentData().defPad,
+                            child: Placeholder(
+                              fallbackHeight: screenHeight * 0.15,
+                              fallbackWidth: screenHeight * 0.15,
+                            ),
+                          ),
+                          Gap(screenWidth * 0.03),
+                          const Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Model",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                "XMA",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Divider(
+                                endIndent: 5,
+                                indent: 5,
+                                thickness: 2,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "Name",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                "TATA NEXON",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-              ),
-              Gap(screenHeight * 0.01),
-              Divider(
-                endIndent: 10,
-                indent: 10,
-                thickness: 3,
-                color: DTprimary().onContainer,
-              ),
-              const Text(
-                "Your Vehicles",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                ),
-              ),
-              CustomContainer(
-                height: screenHeight * 0.2,
-                width: screenWidth * 0.9,
-                color: DTprimary().onContainer,
-                containerChild: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Placeholder(
-                          fallbackHeight: screenHeight * 0.2,
-                          fallbackWidth: screenWidth * 0.45,
-                        ),
-                        Gap(screenWidth * 0.03),
-                        const Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Model",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
-                            Text(
-                              "XMA",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Divider(
-                              endIndent: 5,
-                              indent: 5,
-                              thickness: 2,
-                              color: Colors.white,
-                            ),
-                            Text(
-                              "Name",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
-                            Text(
-                              "TATA NEXON",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
         padding: ComponentData().defPad,
         child: Column(
           children: [
-            Gap(screenHeight * 0.2),
+            Gap(screenHeight * 0.1),
             Row(
               children: [
                 Gap(screenHeight * 0.02),
@@ -34,8 +34,8 @@ class _HomeState extends State<Home> {
             Stack(
               children: [
                 Container(
-                  height: screenHeight * 0.35,
-                  width: screenHeight * 0.35,
+                  height: screenHeight * 0.4,
+                  width: screenHeight * 0.4,
                   color: Colors.transparent,
                   child: CircularProgressIndicator(
                     backgroundColor: DTsecondary().onCircularLoader,
@@ -47,15 +47,16 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Positioned(
+                  width: screenWidth * 0.6,
+                  left: screenWidth * 0.1,
                   top: screenHeight * 0.1,
-                  left: screenWidth * 0.15,
                   child: const Column(
                     children: [
                       Text(
                         "250 K",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 80,
+                          fontSize: 70,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -73,34 +74,37 @@ class _HomeState extends State<Home> {
             ),
             Gap(screenHeight * 0.03),
             CustomContainer(
-              height: 100,
-              width: 390,
+              height: screenHeight * 0.12,
+              width: screenWidth * 0.9,
               color: DTprimary().onContainer,
               containerChild: Row(
                 children: [
                   Gap(screenWidth * 0.02),
                   CustomContainer(
-                    height: 65,
-                    width: 65,
+                    height: screenHeight * 0.1,
+                    width: screenHeight * 0.1,
                     color: DTprimary().onBody,
                     containerChild: Image.asset(
                       "assets/icons/soothingenv.png",
                     ),
                   ),
                   Gap(screenWidth * 0.02),
-                  const CustomContainer(
-                    height: 90,
-                    width: 280,
+                  CustomContainer(
+                    height: screenHeight * 0.1,
+                    width: screenWidth * 0.6,
                     color: Colors.transparent,
-                    containerChild: Text(
-                      "more than 45% of people in your area",
-                      maxLines: 2,
-                      overflow: TextOverflow.clip,
-                      style: TextStyle(
-                        decoration: TextDecoration.none,
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
+                    containerChild: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Text(
+                        "more than 45% of people in your area",
+                        maxLines: 2,
+                        overflow: TextOverflow.clip,
+                        style: TextStyle(
+                          decoration: TextDecoration.none,
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),

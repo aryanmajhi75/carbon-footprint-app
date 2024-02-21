@@ -1,4 +1,4 @@
-import 'package:carbon_footprint_app/components/navbar.dart';
+import 'package:carbon_footprint_app/components/CustomNavbar.dart';
 import 'package:carbon_footprint_app/theme/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:appwrite/appwrite.dart';

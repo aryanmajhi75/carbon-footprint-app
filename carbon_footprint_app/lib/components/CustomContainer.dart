@@ -23,6 +23,9 @@ class _CustomContainerState extends State<CustomContainer> {
     return Container(
       height: widget.height,
       width: widget.width,
+      padding: EdgeInsets.only(
+        right: 10,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(22),
         color: widget.color,
