@@ -1,3 +1,4 @@
+import 'package:carbon_footprint_app/constants.dart';
 import 'package:carbon_footprint_app/dataClasses/listTileData.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -22,7 +23,7 @@ class _CustomHListState extends State<CustomHList> {
       scrollDirection: Axis.horizontal,
       itemBuilder: (BuildContext context, int index) {
         return Card(
-          color: Colors.amber.shade500,
+          color: DTsecondary().onCircularLoader.withAlpha(90),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(20),
@@ -45,7 +46,7 @@ class _CustomHListState extends State<CustomHList> {
                       fontSize: 50,
                       overflow: TextOverflow.clip,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                   ),
                 ),

@@ -2,6 +2,7 @@ import 'package:carbon_footprint_app/components/CustomContainer.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -19,58 +20,43 @@ class _HomeState extends State<Home> {
       child: Padding(
         padding: ComponentData().defPad,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Gap(screenHeight * 0.1),
-            Row(
-              children: [
-                Gap(screenHeight * 0.02),
-                FloatingActionButton(
-                  onPressed: () {},
-                  child: Image.asset("assets/icons/refresh.png"),
-                ),
-              ],
+            Gap(screenHeight * 0.03),
+            FloatingActionButton(
+              onPressed: () {},
+              child: Image.asset("assets/icons/refresh.png"),
             ),
             Gap(screenHeight * 0.03),
-            Stack(
-              children: [
-                Container(
-                  height: screenHeight * 0.4,
-                  width: screenHeight * 0.4,
-                  color: Colors.transparent,
-                  child: CircularProgressIndicator(
-                    backgroundColor: DTsecondary().onCircularLoader,
-                    value: 85 * 0.01,
-                    valueColor:
-                        AlwaysStoppedAnimation(DTprimary().onCircularLoader),
-                    strokeWidth: 15,
-                    strokeCap: StrokeCap.round,
+            CircularPercentIndicator(
+              radius: screenWidth * 0.4,
+              lineWidth: 13.0,
+              animation: true,
+              percent: 0.7,
+              circularStrokeCap: CircularStrokeCap.round,
+              backgroundColor: DTsecondary().onCircularLoader,
+              progressColor: DTprimary().onCircularLoader,
+              center: const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "250 K",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 70,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Positioned(
-                  width: screenWidth * 0.6,
-                  left: screenWidth * 0.1,
-                  top: screenHeight * 0.1,
-                  child: const Column(
-                    children: [
-                      Text(
-                        "250 K",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 70,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "KgCO2",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    "KgCO2",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Gap(screenHeight * 0.03),
             CustomContainer(
@@ -93,8 +79,8 @@ class _HomeState extends State<Home> {
                     height: screenHeight * 0.1,
                     width: screenWidth * 0.6,
                     color: Colors.transparent,
-                    containerChild: Padding(
-                      padding: const EdgeInsets.all(10),
+                    containerChild: const Padding(
+                      padding: EdgeInsets.all(10),
                       child: Text(
                         "more than 45% of people in your area",
                         maxLines: 2,
@@ -110,7 +96,7 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

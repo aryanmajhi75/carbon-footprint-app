@@ -1,6 +1,8 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
+import 'package:carbon_footprint_app/components/CustomExpansionTile.dart';
 import 'package:carbon_footprint_app/components/CustomUserDataCard.dart';
 import 'package:carbon_footprint_app/constants.dart';
+import 'package:carbon_footprint_app/dataClasses/expansionListData.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -12,6 +14,28 @@ class You extends StatefulWidget {
 }
 
 class _YouState extends State<You> {
+  final List<ExpansionListData> _bioList = [
+    ExpansionListData(
+      "Gender",
+      "Male",
+    ),
+    ExpansionListData(
+      "Age",
+      "23",
+    ),
+  ];
+
+  final List<ExpansionListData> _dietList = [
+    ExpansionListData(
+      "Meat",
+      "Sometimes",
+    ),
+    ExpansionListData(
+      "Milk",
+      "Sometimes",
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
@@ -43,22 +67,25 @@ class _YouState extends State<You> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-
-                // CustomUserDataCard(
-                //   title: "Bio",
-                //   subtitle1: "Gender",
-                //   data1: "Male",
-                //   subtitle2: "Age",
-                //   data2: 22.toString(),
-                // ),
-                // Gap(screenHeight * 0.01),
-                // CustomUserDataCard(
-                //   title: "Diet",
-                //   subtitle1: "Milk",
-                //   data1: "Sometimes",
-                //   subtitle2: "Meat",
-                //   data2: "Sometimes",
-                // ),
+                ClipRRect(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                  child: CustomExpansionTile(
+                    heading: "Bio",
+                    items: _bioList,
+                  ),
+                ),
+                Gap(screenHeight * 0.01),
+                ClipRRect(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                  child: CustomExpansionTile(
+                    heading: "Diet",
+                    items: _dietList,
+                  ),
+                ),
                 Gap(screenHeight * 0.01),
                 const Text(
                   "Vehicles",
