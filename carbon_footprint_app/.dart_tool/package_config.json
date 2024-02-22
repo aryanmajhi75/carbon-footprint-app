@@ -326,6 +326,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "percent_indicator",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/percent_indicator-4.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "platform",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/platform-3.1.4",
       "packageUri": "lib/",
@@ -548,7 +554,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-02-13T06:46:25.325078Z",
+  "generated": "2024-02-22T05:55:10.196309Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
