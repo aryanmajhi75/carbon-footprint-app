@@ -33,86 +33,88 @@ class _EcoState extends State<Eco> {
     return SafeArea(
       child: Padding(
         padding: ComponentData().defPad,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Gap(screenHeight * 0.02),
-              CustomContainer(
-                height: screenHeight * 0.15,
-                width: screenWidth * 0.9,
-                color: DTprimary().onContainer,
-                containerChild: const Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Your footprint is : ",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+        child: Center(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Gap(screenHeight * 0.02),
+                CustomContainer(
+                  height: screenHeight * 0.15,
+                  width: screenWidth * 0.9,
+                  color: DTprimary().onContainer,
+                  containerChild: const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Your footprint is : ",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "250K KgCO2",
-                        style: TextStyle(
-                          color: Color(0xffFC0505),
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          "250K KgCO2",
+                          style: TextStyle(
+                            color: Color(0xffFC0505),
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Gap(screenHeight * 0.02),
-              const Text(
-                "Reduce footprint at home",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
+                Gap(screenHeight * 0.02),
+                const Text(
+                  "Reduce footprint at home",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: screenHeight * 0.25,
-                width: screenWidth,
-                child: CustomHList(
-                  ListChildren: homeList,
+                SizedBox(
+                  height: screenHeight * 0.25,
+                  width: screenWidth,
+                  child: CustomHList(
+                    ListChildren: homeList,
+                  ),
                 ),
-              ),
-              Gap(screenHeight * 0.02),
-              const Text(
-                "Reduce footprint from appliances",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
+                Gap(screenHeight * 0.02),
+                const Text(
+                  "Reduce footprint from appliances",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: screenHeight * 0.25,
-                width: screenWidth,
-                child: CustomHList(
-                  ListChildren: homeList,
+                SizedBox(
+                  height: screenHeight * 0.25,
+                  width: screenWidth,
+                  child: CustomHList(
+                    ListChildren: homeList,
+                  ),
                 ),
-              ),
-              Gap(screenHeight * 0.02),
-              const Text(
-                "Reduce footprint on the go",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
+                Gap(screenHeight * 0.02),
+                const Text(
+                  "Reduce footprint on the go",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: screenHeight * 0.25,
-                width: screenWidth,
-                child: CustomHList(
-                  ListChildren: homeList,
+                SizedBox(
+                  height: screenHeight * 0.25,
+                  width: screenWidth,
+                  child: CustomHList(
+                    ListChildren: homeList,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

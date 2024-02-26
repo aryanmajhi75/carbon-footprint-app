@@ -1,53 +1,73 @@
+import 'dart:developer';
+
+import 'package:carbon_footprint_app/dbHelper/dataModel.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 
 const dbName = 'Ecofy';
 
-const defaultUri =
-    'mongodb+srv://majhiaryan13:TPK4jb57idXbdRsJ@cluster0.bkeqf8e.mongodb.net/?retryWrites=true&w=majority';
+const String defaultUri =
+    "mongodb+srv://majhiaryan13:TPK4jb57idXbdRsJ@cluster0.bkeqf8e.mongodb.net/Ecofy?retryWrites=true&w=majority&appName=Cluster0";
 
-void initDb() async {
-  var db = Db(defaultUri);
-  await db.open();
+var db;
+
+Future<void> initDb() async {
+  try {
+    db = await Db.create(defaultUri);
+    await db.open();
+    // inspect(db);
+    log("db OPENED");
+  } catch (e) {
+    log(e.toString());
+  }
+  // return db;
 }
 
-void find() async {}
+closeDb() async {
+  await db!.close();
+}
 
-void findAll() async {}
+search(
+  String collection,
+) async {
+  var coll = db!.collection(collection);
+  closeDb();
+}
 
-void insertData() async {}
+findOne(
+  String collection,
+) async {
+  var coll = db!.collection(collection);
+  closeDb();
+}
 
-void updateData() async {}
+findAll(
+  String collection,
+) async {
+  var coll = db!.collection(collection);
+  closeDb();
+}
 
-void deleteData() async {}
+insertData(
+  String collection,
+) async {
+  var coll = db!.collection(collection);
+  closeDb();
+}
 
-// void main() async {
+insertVehicleData(String collection, UserVehicleData document) async {
+  initDb();
+  var coll = db!.collection(collection);
+  var response = await coll.insert(document.toJson());
+  closeDb();
+}
 
-//   Future cleanupDatabase() async {
-//     await db.close();
-//   }
+updateData(String collection, var value) async {
+  var coll = db!.collection(collection);
+  coll.updateOne("vehicle", value);
+  closeDb();
+}
 
-//   if (!db.masterConnection.serverCapabilities.supportsOpMsg) {
-//     return;
-//   }
-
-//   var collectionName = 'testCollection';
-//   await db.dropCollection(collectionName);
-//   var collection = db.collection(collectionName);
-
-//   var ret = await collection.insertOne(<String, dynamic>{
-//     'name': 'Tom',
-//     'age': 23,
-//     'num_of_members': 3,
-//   });
-
-//   if (!ret.isSuccess) {
-//     print('Error detected in record insertion');
-//   }
-
-//   var res = await collection.findOne();
-
-//   print('Fetched ${res?['name']}');
-//   // Tom
-
-//   await cleanupDatabase();
-// }
+deleteData(String collection) async {
+  var coll = db!.collection(collection);
+  closeDb();
+}

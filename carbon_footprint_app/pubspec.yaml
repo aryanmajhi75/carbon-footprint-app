@@ -15,6 +15,7 @@ dependencies:
   fl_chart: 
   mongo_dart:
   percent_indicator:
+  convert: 
 
 dev_dependencies:
   flutter_test:

@@ -20,6 +20,18 @@ migrate_working_dir/
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
 #.vscode/
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/device_info_plus
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/flutter_web_auth_2
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/package_info_plus
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux
+carbon_footprint_app/linux/flutter/ephemeral/.plugin_symlinks/window_to_front
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/device_info_plus
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/flutter_web_auth_2
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/url_launcher_windows
+carbon_footprint_app/windows/flutter/ephemeral/.plugin_symlinks/window_to_front
 
 # Flutter/Dart/Pub related
 **/doc/api/

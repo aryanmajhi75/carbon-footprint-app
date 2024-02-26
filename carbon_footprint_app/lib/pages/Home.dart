@@ -29,33 +29,35 @@ class _HomeState extends State<Home> {
               child: Image.asset("assets/icons/refresh.png"),
             ),
             Gap(screenHeight * 0.03),
-            CircularPercentIndicator(
-              radius: screenWidth * 0.4,
-              lineWidth: 13.0,
-              animation: true,
-              percent: 0.7,
-              circularStrokeCap: CircularStrokeCap.round,
-              backgroundColor: DTsecondary().onCircularLoader,
-              progressColor: DTprimary().onCircularLoader,
-              center: const Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "250 K",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 70,
-                      fontWeight: FontWeight.bold,
+            Center(
+              child: CircularPercentIndicator(
+                radius: screenWidth * 0.4,
+                lineWidth: 13.0,
+                animation: true,
+                percent: 0.7,
+                circularStrokeCap: CircularStrokeCap.round,
+                backgroundColor: DTsecondary().onCircularLoader,
+                progressColor: DTprimary().onCircularLoader,
+                center: const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "250 K",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 70,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  Text(
-                    "KgCO2",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
+                    Text(
+                      "KgCO2",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Gap(screenHeight * 0.03),

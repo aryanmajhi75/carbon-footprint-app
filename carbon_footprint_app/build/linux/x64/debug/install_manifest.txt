@@ -24,8 +24,12 @@
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/profile.png
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/refresh.png
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/soothingenv.png
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/diet.png
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/icons/bio.png
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Quicksand-Bold.ttf
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Quicksand-Medium.ttf
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Quicksand-Light.ttf
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Quicksand-Regular.ttf
 /home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Quicksand-SemiBold.ttf
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/tidbyt.png
+/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/watchrolliron.png

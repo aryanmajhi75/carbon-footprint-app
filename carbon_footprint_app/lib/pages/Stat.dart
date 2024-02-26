@@ -63,43 +63,136 @@ class _StatState extends State<Stat> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Padding(
-            padding: ComponentData().defPad,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              // crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Gap(screenHeight * 0.02),
-                const Text(
-                  "Model Paramter Comparison",
-                  style: TextStyle(
-                    color: Colors.white,
+        child: Center(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Padding(
+              padding: ComponentData().defPad,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Gap(screenHeight * 0.02),
+                  const Text(
+                    "Model Paramter Comparison",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Gap(screenHeight * 0.02),
-                Center(
-                  child: CustomContainer(
+                  Gap(screenHeight * 0.02),
+                  Center(
+                    child: CustomContainer(
+                      height: screenHeight * 0.4,
+                      width: screenWidth * 0.9,
+                      color: DTprimary().onContainer,
+                      containerChild: Padding(
+                        padding: ComponentData().defPad,
+                        child: LineChart(
+                          // curve: Easing.legacyAccelerate,
+                          // duration: Duration(seconds: 2),
+                          LineChartData(
+                            maxX: 6,
+                            maxY: 750,
+                            minX: 0,
+                            minY: 0,
+                            titlesData: FlTitlesData(
+                              rightTitles: const AxisTitles(
+                                sideTitles: SideTitles(showTitles: false),
+                              ),
+                              topTitles: const AxisTitles(
+                                sideTitles: SideTitles(showTitles: false),
+                              ),
+                              leftTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: true,
+                                  getTitlesWidget: (value, meta) {
+                                    const style = TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
+                                      color: Colors.white,
+                                    );
+                                    return Text(
+                                      value.toInt().toString(),
+                                      style: style,
+                                    );
+                                  },
+                                ),
+                              ),
+                              bottomTitles: AxisTitles(
+                                sideTitles: SideTitles(
+                                  showTitles: true,
+                                  getTitlesWidget: (value, meta) {
+                                    const style = TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
+                                      color: Colors.white,
+                                    );
+                                    String text;
+                                    switch (value) {
+                                      case 1:
+                                        text = 'JAN';
+                                        break;
+                                      case 2:
+                                        text = 'FEB';
+                                        break;
+                                      case 3:
+                                        text = 'MAR';
+                                        break;
+                                      case 4:
+                                        text = 'APR';
+                                        break;
+                                      case 5:
+                                        text = 'MAY';
+                                        break;
+                                      case 6:
+                                        text = 'JUN';
+                                        break;
+                                      default:
+                                        return Container();
+                                    }
+                                    return Text(
+                                      text,
+                                      style: style,
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                            lineBarsData: [
+                              list1,
+                              list2,
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Gap(screenHeight * 0.02),
+                  const Text(
+                    "Monthly Footprint",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Gap(screenHeight * 0.02),
+                  CustomContainer(
                     height: screenHeight * 0.4,
                     width: screenWidth * 0.9,
                     color: DTprimary().onContainer,
                     containerChild: Padding(
                       padding: ComponentData().defPad,
-                      child: LineChart(
-                        // curve: Easing.legacyAccelerate,
-                        // duration: Duration(seconds: 2),
-                        LineChartData(
-                          maxX: 6,
-                          maxY: 750,
-                          minX: 0,
-                          minY: 0,
+                      child: BarChart(
+                        BarChartData(
                           titlesData: FlTitlesData(
-                            rightTitles: const AxisTitles(
-                              sideTitles: SideTitles(showTitles: false),
-                            ),
                             topTitles: const AxisTitles(
-                              sideTitles: SideTitles(showTitles: false),
+                              sideTitles: SideTitles(
+                                showTitles: false,
+                              ),
+                            ),
+                            rightTitles: const AxisTitles(
+                              sideTitles: SideTitles(
+                                showTitles: false,
+                              ),
                             ),
                             leftTitles: AxisTitles(
                               sideTitles: SideTitles(
@@ -111,7 +204,7 @@ class _StatState extends State<Stat> {
                                     color: Colors.white,
                                   );
                                   return Text(
-                                    value.toInt().toString(),
+                                    value.ceilToDouble().toString(),
                                     style: style,
                                   );
                                 },
@@ -120,6 +213,7 @@ class _StatState extends State<Stat> {
                             bottomTitles: AxisTitles(
                               sideTitles: SideTitles(
                                 showTitles: true,
+                                reservedSize: 20,
                                 getTitlesWidget: (value, meta) {
                                   const style = TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -157,120 +251,28 @@ class _StatState extends State<Stat> {
                               ),
                             ),
                           ),
-                          lineBarsData: [
-                            list1,
-                            list2,
+                          barGroups: [
+                            generateGroupData(1, 2, 5, 1.7),
+                            generateGroupData(2, 1.3, 3.1, 2.8),
+                            generateGroupData(3, 3.1, 4, 3.1),
+                            generateGroupData(4, 0.8, 3.3, 3.4),
+                            generateGroupData(5, 2, 5.6, 1.8),
+                            generateGroupData(6, 1.3, 3.2, 2),
                           ],
                         ),
                       ),
                     ),
                   ),
-                ),
-                Gap(screenHeight * 0.02),
-                const Text(
-                  "Monthly Footprint",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                Gap(screenHeight * 0.02),
-                CustomContainer(
-                  height: screenHeight * 0.4,
-                  width: screenWidth * 0.9,
-                  color: DTprimary().onContainer,
-                  containerChild: Padding(
-                    padding: ComponentData().defPad,
-                    child: BarChart(
-                      BarChartData(
-                        titlesData: FlTitlesData(
-                          topTitles: const AxisTitles(
-                            sideTitles: SideTitles(
-                              showTitles: false,
-                            ),
-                          ),
-                          rightTitles: const AxisTitles(
-                            sideTitles: SideTitles(
-                              showTitles: false,
-                            ),
-                          ),
-                          leftTitles: AxisTitles(
-                            sideTitles: SideTitles(
-                              showTitles: true,
-                              getTitlesWidget: (value, meta) {
-                                const style = TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 10,
-                                  color: Colors.white,
-                                );
-                                return Text(
-                                  value.ceilToDouble().toString(),
-                                  style: style,
-                                );
-                              },
-                            ),
-                          ),
-                          bottomTitles: AxisTitles(
-                            sideTitles: SideTitles(
-                              showTitles: true,
-                              reservedSize: 20,
-                              getTitlesWidget: (value, meta) {
-                                const style = TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 10,
-                                  color: Colors.white,
-                                );
-                                String text;
-                                switch (value) {
-                                  case 1:
-                                    text = 'JAN';
-                                    break;
-                                  case 2:
-                                    text = 'FEB';
-                                    break;
-                                  case 3:
-                                    text = 'MAR';
-                                    break;
-                                  case 4:
-                                    text = 'APR';
-                                    break;
-                                  case 5:
-                                    text = 'MAY';
-                                    break;
-                                  case 6:
-                                    text = 'JUN';
-                                    break;
-                                  default:
-                                    return Container();
-                                }
-                                return Text(
-                                  text,
-                                  style: style,
-                                );
-                              },
-                            ),
-                          ),
-                        ),
-                        barGroups: [
-                          generateGroupData(1, 2, 5, 1.7),
-                          generateGroupData(2, 1.3, 3.1, 2.8),
-                          generateGroupData(3, 3.1, 4, 3.1),
-                          generateGroupData(4, 0.8, 3.3, 3.4),
-                          generateGroupData(5, 2, 5.6, 1.8),
-                          generateGroupData(6, 1.3, 3.2, 2),
-                        ],
-                      ),
+                  Gap(screenHeight * 0.02),
+                  const Text(
+                    "Monthly Footprint",
+                    style: TextStyle(
+                      color: Colors.white,
                     ),
                   ),
-                ),
-                Gap(screenHeight * 0.02),
-                const Text(
-                  "Monthly Footprint",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                Gap(screenHeight * 0.02),
-              ],
+                  Gap(screenHeight * 0.02),
+                ],
+              ),
             ),
           ),
         ),
