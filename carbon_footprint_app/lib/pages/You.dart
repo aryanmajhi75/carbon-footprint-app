@@ -1,3 +1,4 @@
+import 'package:carbon_footprint_app/components/CustomAddDialog.dart';
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
 import 'package:carbon_footprint_app/components/CustomExpansionTile.dart';
 import 'package:carbon_footprint_app/components/CustomUserDataCard.dart';
@@ -39,11 +40,7 @@ class _YouState extends State<You> {
     ),
   ];
 
-  String id = "nULL";
-  String name = "nULL";
-  String model = "nULL";
-  String chassisNum = "nULL";
-  int yearsOld = 0;
+  bool _extended = false;
 
   @override
   Widget build(BuildContext context) {
@@ -55,139 +52,7 @@ class _YouState extends State<You> {
           showDialog(
               context: context,
               builder: (context) {
-                return SimpleDialog(
-                  elevation: 10,
-                  backgroundColor: DTprimary().onContainer,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  contentPadding: const EdgeInsets.all(10),
-                  children: [
-                    TextField(
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                      decoration: const InputDecoration(
-                        label: Text(
-                          "Enter Vehicle Name",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontFamily: 'Quicksand',
-                          ),
-                          // style: Theme.of(context).textTheme.displayMedium,
-                        ),
-                      ),
-                      onChanged: (value) {
-                        setState(() {
-                          name = value;
-                          // username = value;
-                        });
-                      },
-                      keyboardType: TextInputType.name,
-                    ),
-                    Gap(screenHeight * 0.01),
-                    TextField(
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                      decoration: const InputDecoration(
-                        label: Text(
-                          "Enter Vehicle Model",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontFamily: 'Quicksand',
-                          ),
-                          // style: Theme.of(context).textTheme.displayMedium,
-                        ),
-                      ),
-                      onChanged: (value) {
-                        setState(() {
-                          model = value;
-                          // username = value;
-                        });
-                      },
-                      keyboardType: TextInputType.name,
-                    ),
-                    Gap(screenHeight * 0.01),
-                    TextField(
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                      decoration: const InputDecoration(
-                        label: Text(
-                          "Enter Chassis Number",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontFamily: 'Quicksand',
-                          ),
-                          // style: Theme.of(context).textTheme.displayMedium,
-                        ),
-                      ),
-                      onChanged: (value) {
-                        setState(() {
-                          chassisNum = value;
-                          // username = value;
-                        });
-                      },
-                      keyboardType: TextInputType.name,
-                    ),
-                    Gap(screenHeight * 0.01),
-                    TextField(
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                      decoration: const InputDecoration(
-                        label: Text(
-                          "How old is the Vehicle?",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontFamily: 'Quicksand',
-                          ),
-                          // style: Theme.of(context).textTheme.displayMedium,
-                        ),
-                      ),
-                      onChanged: (value) {
-                        setState(() {
-                          yearsOld = int.parse(value);
-                          // username = value;
-                        });
-                      },
-                      keyboardType: TextInputType.name,
-                    ),
-                    Gap(screenHeight * 0.01),
-                    IconButton(
-                      onPressed: () {
-                        id = "majhiaryan13@gmail.com";
-                        UserVehicleData vehicleData = UserVehicleData(
-                          id: id,
-                          name: name,
-                          model: model,
-                          chassisNum: chassisNum,
-                          yearsOld: yearsOld,
-                        );
-                        print(vehicleData.id);
-                        print(vehicleData.name);
-                        print(vehicleData.model);
-                        print(vehicleData.chassisNum);
-                        print(vehicleData.yearsOld);
-                        insertUserVehicleData(vehicleData);
-                        Navigator.of(context).pop();
-                      },
-                      icon: Icon(
-                        Icons.check_rounded,
-                        color: DTprimary().onIconCol,
-                      ),
-                    )
-                  ],
-                );
+                return customAddDialog();
               });
         },
         elevation: 5,

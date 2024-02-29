@@ -114,11 +114,27 @@ class UserLocationData {
     required this.aqi,
   });
 
-  addlocation(String inputId, String inputLocation, Float inputAqi) {
-    id = inputId;
-    location = inputLocation;
-    aqi = inputAqi;
+  factory UserLocationData.fromJson(Map<String, dynamic> json) {
+    return UserLocationData(
+      id: json['id'],
+      aqi: json['aqi'],
+      location: json['location'],
+    );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'aqi': aqi,
+      'location': location,
+    };
+  }
+
+  // addlocation(String inputId, String inputLocation, Float inputAqi) {
+  //   id = inputId;
+  //   location = inputLocation;
+  //   aqi = inputAqi;
+  // }
 }
 
 class UserVehicleData {
