@@ -1,7 +1,6 @@
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:carbon_footprint_app/dataClasses/listTileData.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class CustomHList extends StatefulWidget {
   final List<listTileData> ListChildren;
@@ -21,6 +20,7 @@ class _CustomHListState extends State<CustomHList> {
     final screenWidth = MediaQuery.of(context).size.width;
     return ListView.builder(
       scrollDirection: Axis.horizontal,
+      // padding: const EdgeInsets.all(10),
       itemBuilder: (BuildContext context, int index) {
         return Card(
           color: DTsecondary().onCircularLoader.withAlpha(90),

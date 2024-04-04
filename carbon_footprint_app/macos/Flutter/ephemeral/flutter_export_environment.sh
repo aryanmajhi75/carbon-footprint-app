@@ -1,6 +1,6 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/home/saruo/snap/flutter/common/flutter"
+export "FLUTTER_ROOT=/home/saruo/flutter-dev/flutter"
 export "FLUTTER_APPLICATION_PATH=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"

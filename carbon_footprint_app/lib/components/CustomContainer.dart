@@ -23,7 +23,7 @@ class _CustomContainerState extends State<CustomContainer> {
     return Container(
       height: widget.height,
       width: widget.width,
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         right: 10,
       ),
       decoration: BoxDecoration(

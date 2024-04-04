@@ -30,6 +30,7 @@ ThemeData darkMode = ThemeData(
     backgroundColor: DTsecondary().onIconBgCol,
     focusColor: DTprimary().onIconCol,
   ),
+  // segmentedButtonTheme: SegmentedButtonThemeData(selectedIcon: Segme),
 );
 
 //Theme settingsfor dark theme

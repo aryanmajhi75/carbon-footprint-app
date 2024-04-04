@@ -1,12 +1,10 @@
+import 'dart:math';
+
 import 'package:carbon_footprint_app/components/CustomAddDialog.dart';
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
 import 'package:carbon_footprint_app/components/CustomExpansionTile.dart';
-import 'package:carbon_footprint_app/components/CustomUserDataCard.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:carbon_footprint_app/dataClasses/expansionListData.dart';
-import 'package:carbon_footprint_app/dbHelper/appWrite.dart';
-import 'package:carbon_footprint_app/dbHelper/dataModel.dart';
-import 'package:carbon_footprint_app/dbHelper/mongodb.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -16,6 +14,8 @@ class You extends StatefulWidget {
   @override
   State<You> createState() => _YouState();
 }
+
+enum possession { vehicle, homeappliance }
 
 class _YouState extends State<You> {
   final List<ExpansionListData> _bioList = [
@@ -41,6 +41,7 @@ class _YouState extends State<You> {
   ];
 
   bool _extended = false;
+  var _selected;
 
   @override
   Widget build(BuildContext context) {
@@ -99,14 +100,54 @@ class _YouState extends State<You> {
                   ),
                 ),
                 Gap(screenHeight * 0.01),
-                const Text(
-                  "Vehicles",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+                // const Text(
+                //   "Vehicles",
+                //   style: TextStyle(
+                //     color: Colors.white,
+                //     fontSize: 20,
+                //   ),
+                // ),
+                SegmentedButton<possession>(
+                  selectedIcon: const Icon(
+                    Icons.check,
+                    size: 30,
+                    weight: 10,
                   ),
+                  multiSelectionEnabled: false,
+                  showSelectedIcon: true,
+                  segments: <ButtonSegment<possession>>[
+                    ButtonSegment<possession>(
+                      value: possession.vehicle,
+                      label: Text(
+                        'Vehicle',
+                        style: TextStyle(color: DTprimary().onContainer),
+                      ),
+                      icon: Image.asset(
+                        "assets/icons/vehicleAdd.png",
+                        height: 30,
+                      ),
+                    ),
+                    ButtonSegment<possession>(
+                      value: possession.homeappliance,
+                      label: Text(
+                        'Home Appliance',
+                        style: TextStyle(color: DTprimary().onContainer),
+                      ),
+                      icon: Image.asset(
+                        "assets/icons/applianceAdd.png",
+                        height: 30,
+                      ),
+                    ),
+                  ],
+                  selected: _selected,
+                  onSelectionChanged: (Set<possession> p0) {
+                    setState(() {
+                      _selected = p0;
+                      print(_selected);
+                    });
+                  },
                 ),
-                Gap(screenHeight * 0.01),
+                Gap(screenHeight * 0.02),
                 CustomContainer(
                   height: screenHeight * 0.2,
                   width: screenWidth * 0.9,

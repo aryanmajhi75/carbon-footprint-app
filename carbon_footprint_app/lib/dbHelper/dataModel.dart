@@ -30,19 +30,12 @@ class UserGeneralData {
       'number_of_members': numberOfMembers,
     };
   }
-  // addDetails(
-  //     String userId, String inputName, int inputAge, int inputNumberOfMembers) {
-  //   id = userId;
-  //   age = inputAge;
-  //   name = inputName;
-  //   numberOfMembers = inputNumberOfMembers;
-  // }
 }
 
 class UserElectricityData {
   String id;
-  String month;
-  Float bill;
+  List<String> month;
+  List<Float> bill;
 
   UserElectricityData({
     required this.id,
@@ -50,17 +43,30 @@ class UserElectricityData {
     required this.bill,
   });
 
-  // addElectricityBill(String inputId, String inputMonth, Float inputBill) {
-  //   id = inputId;
-  //   month = inputMonth;
-  //   bill = inputBill;
-  // }
+  factory UserElectricityData.fromJson(Map<String, dynamic> json) {
+    var monthList = json['month'].cast<String>();
+    var billList = json['bill'].cast<double>();
+
+    return UserElectricityData(
+      id: json['id'],
+      month: monthList,
+      bill: billList,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'month': month,
+      'bill': bill,
+    };
+  }
 }
 
 class UserDevicesData {
   String id;
-  String name;
-  String mac;
+  List<String> name;
+  List<String> mac;
 
   UserDevicesData({
     required this.id,
@@ -69,44 +75,69 @@ class UserDevicesData {
   });
 
   //majhiaryan13@gmail.com
-  // ->redmi note 8 pro
-  // ->20.ee.2..
+  //["redmi note 8 pro","saruo"]
+  //["20.2e.2a.1b","99.2a.65.4c"]
 
-  // addDevice(String inputId, String inputName, String inputMac) {
-  //   id = inputId;
-  //   name = inputName;
-  //   mac = inputMac;
-  // }
+  factory UserDevicesData.fromJson(Map<String, dynamic> json) {
+    var deviceList = json['device_name'].cast<String>();
+    var macList = json['mac_id'].cast<double>();
+
+    return UserDevicesData(
+      id: json['id'],
+      name: deviceList,
+      mac: macList,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'device_name': name,
+      'mac_id': mac,
+    };
+  }
 }
 
 class UserBodySensorData {
   String id;
-  Float walking;
-  Float running;
-  Float vehicle;
-  int hour;
+  List<Float> walking;
+  List<Float> running;
+  List<Float> vehicle;
 
   UserBodySensorData({
     required this.id,
     required this.walking,
     required this.running,
     required this.vehicle,
-    required this.hour,
   });
 
-  addBodySensor(String inputId, Float inputWalking, Float inputRunning,
-      Float inputVehicle, int hour) {
-    id = inputId;
-    walking = inputWalking;
-    running = inputRunning;
-    vehicle = inputVehicle;
+  factory UserBodySensorData.fromJson(Map<String, dynamic> json) {
+    var walkingList = json['walking'].cast<Float>();
+    var runningList = json['running'].cast<Float>();
+    var vehicleList = json['vehicle'].cast<Float>();
+
+    return UserBodySensorData(
+      id: json['id'],
+      walking: walkingList,
+      running: runningList,
+      vehicle: vehicleList,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'walking': walking,
+      'running': running,
+      'vehicle': vehicle,
+    };
   }
 }
 
 class UserLocationData {
   String id;
-  String location;
-  Float aqi;
+  List<String> location;
+  List<Float> aqi;
 
   UserLocationData({
     required this.id,
@@ -115,26 +146,23 @@ class UserLocationData {
   });
 
   factory UserLocationData.fromJson(Map<String, dynamic> json) {
+    var locationList = json['location'].cast<String>();
+    var aqiList = json['aqi'].cast<Float>();
+
     return UserLocationData(
       id: json['id'],
-      aqi: json['aqi'],
-      location: json['location'],
+      location: locationList,
+      aqi: aqiList,
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
       'id': id,
-      'aqi': aqi,
       'location': location,
+      'aqi': aqi,
     };
   }
-
-  // addlocation(String inputId, String inputLocation, Float inputAqi) {
-  //   id = inputId;
-  //   location = inputLocation;
-  //   aqi = inputAqi;
-  // }
 }
 
 class UserVehicleData {
@@ -171,13 +199,4 @@ class UserVehicleData {
       'years_old': yearsOld,
     };
   }
-
-  // addVehicleData(String inputId, String inputName, String inputModel,
-  //     String inputChassisNum, int inputYearsOld) {
-  //   id = inputId;
-  //   name = inputName;
-  //   model = inputModel;
-  //   chassisNum = inputChassisNum;
-  //   yearsOld = inputYearsOld;
-  // }
 }

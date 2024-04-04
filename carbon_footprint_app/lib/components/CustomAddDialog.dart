@@ -26,6 +26,14 @@ class _customAddDialogState extends State<customAddDialog> {
     final screenWidth = MediaQuery.of(context).size.width;
     return SimpleDialog(
       elevation: 10,
+      title: const Text("Vehicle Details"),
+      titlePadding: const EdgeInsets.all(5),
+      titleTextStyle: const TextStyle(
+        fontFamily: "Quicksand",
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: 30,
+      ),
       backgroundColor: DTprimary().onContainer,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
@@ -37,9 +45,14 @@ class _customAddDialogState extends State<customAddDialog> {
             color: Colors.white,
             fontSize: 15,
           ),
-          decoration: const InputDecoration(
-            label: Text(
-              "Enter Vehicle Name",
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: DTprimary().onIconCol,
+              ),
+            ),
+            label: const Text(
+              "Vehicle Name",
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.white,
@@ -62,9 +75,14 @@ class _customAddDialogState extends State<customAddDialog> {
             color: Colors.white,
             fontSize: 15,
           ),
-          decoration: const InputDecoration(
-            label: Text(
-              "Enter Vehicle Model",
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: DTprimary().onIconCol,
+              ),
+            ),
+            label: const Text(
+              "Vehicle Model",
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.white,
@@ -87,9 +105,14 @@ class _customAddDialogState extends State<customAddDialog> {
             color: Colors.white,
             fontSize: 15,
           ),
-          decoration: const InputDecoration(
-            label: Text(
-              "Enter Chassis Number",
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: DTprimary().onIconCol,
+              ),
+            ),
+            label: const Text(
+              "Chassis Number",
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.white,
@@ -112,8 +135,13 @@ class _customAddDialogState extends State<customAddDialog> {
             color: Colors.white,
             fontSize: 15,
           ),
-          decoration: const InputDecoration(
-            label: Text(
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: DTprimary().onIconCol,
+              ),
+            ),
+            label: const Text(
               "How old is the Vehicle?",
               style: TextStyle(
                 fontSize: 18,

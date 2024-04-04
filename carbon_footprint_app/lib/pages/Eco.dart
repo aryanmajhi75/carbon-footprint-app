@@ -77,7 +77,7 @@ class _EcoState extends State<Eco> {
                   ),
                 ),
                 SizedBox(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.3,
                   width: screenWidth,
                   child: CustomHList(
                     ListChildren: homeList,
@@ -92,7 +92,7 @@ class _EcoState extends State<Eco> {
                   ),
                 ),
                 SizedBox(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.3,
                   width: screenWidth,
                   child: CustomHList(
                     ListChildren: homeList,
@@ -107,7 +107,7 @@ class _EcoState extends State<Eco> {
                   ),
                 ),
                 SizedBox(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.3,
                   width: screenWidth,
                   child: CustomHList(
                     ListChildren: homeList,
