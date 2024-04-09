@@ -1,10 +1,14 @@
+import 'dart:developer';
+
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:carbon_footprint_app/pages/Eco.dart';
 import 'package:carbon_footprint_app/pages/Home.dart';
 import 'package:carbon_footprint_app/pages/Stat.dart';
+import 'package:carbon_footprint_app/pages/UserDataForm.dart';
 import 'package:carbon_footprint_app/pages/You.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -15,12 +19,25 @@ class NavBar extends StatefulWidget {
 
 class _NavBarState extends State<NavBar> {
   int _selectedIndex = 0;
-
   // void _navigation(int index) {
   //   setState(() {
   //     _selectedIndex = index;
   //   });
   // }
+  @override
+  void initState() {
+    var authdata = Hive.box("authData");
+    // hegqhj@gmail.com
+    // authdata.delete("id");
+    if (authdata.get("id") == null) {
+      setState(() {
+        idPresent = false;
+      });
+    }
+
+    log("Id :  ${authdata.get("id")}");
+    super.initState();
+  }
 
   final List<Widget> _pages = const [
     Home(),
@@ -42,7 +59,12 @@ class _NavBarState extends State<NavBar> {
           elevation: 0,
           onDestinationSelected: (int index) {
             setState(() {
-              _selectedIndex = index;
+              if (idPresent == true) {
+                _selectedIndex = index;
+              } else {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const UserDataForm()));
+              }
             });
           },
           selectedIndex: _selectedIndex,

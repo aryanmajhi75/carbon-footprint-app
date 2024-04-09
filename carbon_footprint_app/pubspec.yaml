@@ -13,14 +13,21 @@ dependencies:
   gap: 
   flutter_animate: 
   fl_chart: 
-  mongo_dart:
   percent_indicator:
-  convert: 
+  convert:
+  flutter_expandable_fab:
+  hive: 
+  hive_flutter: 
+  path_provider: 
+  email_validator:
+  username_validator:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  hive_generator:
+  build_runner:
 
 flutter:
   uses-material-design: true

@@ -5,12 +5,14 @@ class UserGeneralData {
   String name;
   int age;
   int numberOfMembers;
+  double emission;
 
   UserGeneralData({
     required this.id,
     required this.name,
     required this.age,
     required this.numberOfMembers,
+    required this.emission,
   });
 
   factory UserGeneralData.fromJson(Map<String, dynamic> json) {
@@ -19,6 +21,7 @@ class UserGeneralData {
       name: json['user_name'],
       age: json['user_age'],
       numberOfMembers: json['number_of_members'],
+      emission: json['emission'],
     );
   }
 
@@ -28,6 +31,7 @@ class UserGeneralData {
       'user_name': name,
       'user_age': age,
       'number_of_members': numberOfMembers,
+      'emission': emission,
     };
   }
 }
@@ -196,6 +200,42 @@ class UserVehicleData {
       'vehicle_name': name,
       'model_name': model,
       'chassis_number': chassisNum,
+      'years_old': yearsOld,
+    };
+  }
+}
+
+class UserApplianceData {
+  String id;
+  String name;
+  String model;
+  String serialNum;
+  int yearsOld;
+
+  UserApplianceData({
+    required this.id,
+    required this.name,
+    required this.model,
+    required this.serialNum,
+    required this.yearsOld,
+  });
+
+  factory UserApplianceData.fromJson(Map<String, dynamic> json) {
+    return UserApplianceData(
+      id: json['id'],
+      name: json['device_name'],
+      model: json['model_name'],
+      serialNum: json['serial_number'],
+      yearsOld: json['years_old'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'device_name': name,
+      'model_name': model,
+      'serial_number': serialNum,
       'years_old': yearsOld,
     };
   }

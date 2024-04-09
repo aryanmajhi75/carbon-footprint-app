@@ -1,4 +1,5 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
+import 'package:carbon_footprint_app/components/CustomSnackbar.dart';
 import 'package:carbon_footprint_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -18,14 +19,21 @@ class _HomeState extends State<Home> {
     final screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Padding(
-        padding: ComponentData().defPad,
+        padding: ComponentData().defPad / 2,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Gap(screenHeight * 0.03),
             FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                CustomSnackbar.show(
+                    context,
+                    "refreshing...",
+                    DTprimary().onIconCol,
+                    "assets/icons/uncertain.png",
+                    screenWidth);
+              },
               child: Image.asset("assets/icons/refresh.png"),
             ),
             Gap(screenHeight * 0.03),
@@ -63,7 +71,8 @@ class _HomeState extends State<Home> {
             Gap(screenHeight * 0.03),
             CustomContainer(
               height: screenHeight * 0.12,
-              width: screenWidth * 0.9,
+              width: screenWidth,
+              borderCol: DTprimary().onContainer,
               color: DTprimary().onContainer,
               containerChild: Row(
                 children: [
@@ -71,6 +80,7 @@ class _HomeState extends State<Home> {
                   CustomContainer(
                     height: screenHeight * 0.1,
                     width: screenHeight * 0.1,
+                    borderCol: DTprimary().onBody,
                     color: DTprimary().onBody,
                     containerChild: Image.asset(
                       "assets/icons/soothingenv.png",
@@ -79,17 +89,18 @@ class _HomeState extends State<Home> {
                   Gap(screenWidth * 0.02),
                   CustomContainer(
                     height: screenHeight * 0.1,
-                    width: screenWidth * 0.6,
+                    width: screenWidth * 0.65,
+                    borderCol: DTprimary().onBody,
                     color: Colors.transparent,
-                    containerChild: const Padding(
-                      padding: EdgeInsets.all(10),
+                    containerChild: Padding(
+                      padding: ComponentData().defPad / 2,
                       child: Text(
                         "more than 45% of people in your area",
                         maxLines: 2,
-                        overflow: TextOverflow.clip,
+                        // overflow: TextOverflow.clip,
                         style: TextStyle(
                           decoration: TextDecoration.none,
-                          color: Colors.white,
+                          color: DTprimary().white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),

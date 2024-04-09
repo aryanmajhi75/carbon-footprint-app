@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 
 //primary color when in dark mode
 class DTprimary {
+  Color white = const Color(0xffFFFFFF);
   Color onContainer = const Color(0xff312F2F);
   Color onBody = const Color(0xff000000);
   Color onCircularLoader = const Color(0xff2AA95D);
@@ -16,6 +17,7 @@ class DTprimary {
   Color onNavbarIconCol = const Color(0xff2AA95D);
   Color onNavbarIconBg = const Color(0xff000000);
   Color onIconCol = const Color(0xff2AA95D);
+  Color error = const Color(0xFFFF0000);
 }
 
 //secondary color when in dark mode
@@ -71,3 +73,6 @@ List<FlSpot> list2Data = [
   const FlSpot(5, 260),
   const FlSpot(6, 40),
 ];
+
+//check if user is logged in or not
+bool idPresent = true;

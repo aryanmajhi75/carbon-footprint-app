@@ -41,8 +41,9 @@ class _EcoState extends State<Eco> {
               children: [
                 Gap(screenHeight * 0.02),
                 CustomContainer(
-                  height: screenHeight * 0.15,
+                  height: screenHeight * 0.16,
                   width: screenWidth * 0.9,
+                  borderCol: DTprimary().onContainer,
                   color: DTprimary().onContainer,
                   containerChild: const Padding(
                     padding: EdgeInsets.all(10),

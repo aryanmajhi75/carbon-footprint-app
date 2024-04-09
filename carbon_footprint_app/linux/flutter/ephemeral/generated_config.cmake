@@ -1,5 +1,5 @@
 # Generated code do not commit.
-file(TO_CMAKE_PATH "/home/saruo/snap/flutter/common/flutter" FLUTTER_ROOT)
+file(TO_CMAKE_PATH "/home/saruo/flutter-dev/flutter" FLUTTER_ROOT)
 file(TO_CMAKE_PATH "/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app" PROJECT_DIR)
 
 set(FLUTTER_VERSION "0.1.0" PARENT_SCOPE)
@@ -10,9 +10,9 @@ set(FLUTTER_VERSION_BUILD 0 PARENT_SCOPE)
 
 # Environment variables to pass to tool_backend.sh
 list(APPEND FLUTTER_TOOL_ENVIRONMENT
-  "FLUTTER_ROOT=/home/saruo/snap/flutter/common/flutter"
+  "FLUTTER_ROOT=/home/saruo/flutter-dev/flutter"
   "PROJECT_DIR=/home/saruo/Documents/GitHub/carbon-footprint-app/carbon_footprint_app"
-  "DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9mNDBlOTc2YmVkZmY1N2U2OWUxYjNkODlhN2MyYTNjNjE3YTAzZGFkLw=="
+  "DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9hNWMyNGY1MzhkMDVhYWY2NmY3OTcyZmIyMzk1OWQ4Y2FmYjlmOTVhLw=="
   "DART_OBFUSCATION=false"
   "TRACK_WIDGET_CREATION=true"
   "TREE_SHAKE_ICONS=false"

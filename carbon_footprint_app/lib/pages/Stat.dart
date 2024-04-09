@@ -84,6 +84,7 @@ class _StatState extends State<Stat> {
                     child: CustomContainer(
                       height: screenHeight * 0.4,
                       width: screenWidth * 0.9,
+                      borderCol: DTprimary().onContainer,
                       color: DTprimary().onContainer,
                       containerChild: Padding(
                         padding: ComponentData().defPad,
@@ -178,6 +179,7 @@ class _StatState extends State<Stat> {
                   CustomContainer(
                     height: screenHeight * 0.4,
                     width: screenWidth * 0.9,
+                    borderCol: DTprimary().onContainer,
                     color: DTprimary().onContainer,
                     containerChild: Padding(
                       padding: ComponentData().defPad,

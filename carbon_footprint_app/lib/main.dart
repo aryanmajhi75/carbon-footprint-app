@@ -1,8 +1,13 @@
 import 'package:carbon_footprint_app/components/CustomNavbar.dart';
 import 'package:carbon_footprint_app/theme/themes.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+
+  await Hive.openBox("authData");
+
   runApp(const MainApp());
 }
 
