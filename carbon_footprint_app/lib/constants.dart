@@ -19,6 +19,14 @@ class DTprimary {
   Color onIconCol = const Color(0xff2AA95D);
   Color error = const Color(0xFFFF0000);
 
+  //Aqi Color Indicator
+  Color good = const Color(0xff2AA95D);
+  Color moderate = const Color(0xFFFFEE00);
+  Color unhealthySG = const Color(0xFFF09308);
+  Color unhealthy = const Color(0xFFFF0000);
+  Color vUnhealthy = const Color(0xFFC200FD);
+  Color hazardous = const Color(0xFF690101);
+
   //graph colors
   Color Pie1 = const Color(0xFFFF0000);
   Color Pie2 = const Color(0xFF0011FF);

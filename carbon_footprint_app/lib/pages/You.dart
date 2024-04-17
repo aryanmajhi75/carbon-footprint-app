@@ -7,10 +7,7 @@ import 'package:carbon_footprint_app/dataClasses/expansionListData.dart';
 import 'package:carbon_footprint_app/dbHelper/dataModel.dart';
 import 'package:carbon_footprint_app/dbHelper/getData/applianceUserData.dart';
 import 'package:carbon_footprint_app/dbHelper/getData/vehicleUserData.dart';
-import 'package:carbon_footprint_app/pages/Home.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:gap/gap.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -327,7 +324,8 @@ class _YouState extends State<You> {
                       if (snapshot.connectionState == ConnectionState.waiting) {
                         return Center(
                           child: CircularProgressIndicator(
-                              color: DTprimary().onIconCol),
+                            color: DTprimary().onIconCol,
+                          ),
                         );
                       } else if (snapshot.hasError) {
                         CustomSnackbar.show(

@@ -21,8 +21,9 @@ dependencies:
   path_provider: 
   email_validator:
   username_validator:
-  mobility_features: 
-
+  air_quality:
+  geolocator:
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
