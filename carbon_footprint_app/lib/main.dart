@@ -1,4 +1,8 @@
 import 'package:carbon_footprint_app/components/CustomNavbar.dart';
+import 'package:carbon_footprint_app/pages/Eco.dart';
+import 'package:carbon_footprint_app/pages/Home.dart';
+import 'package:carbon_footprint_app/pages/Stat.dart';
+import 'package:carbon_footprint_app/pages/You.dart';
 import 'package:carbon_footprint_app/theme/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -19,6 +23,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: darkMode,
       debugShowCheckedModeBanner: false,
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => const Home(),
+        '/stat': (BuildContext context) => const Stat(),
+        '/eco': (BuildContext context) => const Eco(),
+        '/you': (BuildContext context) => const You()
+      },
       home: const Scaffold(
         body: Center(
           child: NavBar(),

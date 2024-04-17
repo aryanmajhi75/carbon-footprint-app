@@ -520,6 +520,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+  mobility_features:
+    dependency: "direct main"
+    description:
+      name: mobility_features
+      sha256: fab6ab0ce3d7c36213e86aab35e0ccf7395523285bd09ca09a5226add961e8b9
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.1"
   package_config:
     dependency: transitive
     description:
@@ -664,6 +672,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.4"
+  simple_cluster:
+    dependency: transitive
+    description:
+      name: simple_cluster
+      sha256: "64d6b7d60d641299ad8c3f012417c711532792c1bc61ac6a7f52b942cdba65da"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -701,6 +717,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.11.1"
+  stats:
+    dependency: transitive
+    description:
+      name: stats
+      sha256: a64d41328dc1332a02ce4acc8830e240e10ac14b19c9bb256466737b792f22aa
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   stream_channel:
     dependency: transitive
     description:

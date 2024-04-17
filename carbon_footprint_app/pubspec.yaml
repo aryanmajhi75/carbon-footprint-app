@@ -21,6 +21,7 @@ dependencies:
   path_provider: 
   email_validator:
   username_validator:
+  mobility_features: 
 
 dev_dependencies:
   flutter_test:

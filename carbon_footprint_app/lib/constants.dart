@@ -18,6 +18,12 @@ class DTprimary {
   Color onNavbarIconBg = const Color(0xff000000);
   Color onIconCol = const Color(0xff2AA95D);
   Color error = const Color(0xFFFF0000);
+
+  //graph colors
+  Color Pie1 = const Color(0xFFFF0000);
+  Color Pie2 = const Color(0xFF0011FF);
+  Color Pie3 = const Color(0xFFC200FD);
+  Color Pie4 = const Color(0xFFFFEE00);
 }
 
 //secondary color when in dark mode

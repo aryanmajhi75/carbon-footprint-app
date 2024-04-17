@@ -19,8 +19,8 @@ class CustomExpansionTile extends StatefulWidget {
 class _CustomExpansionTileState extends State<CustomExpansionTile> {
   bool _expand = false;
 
-  final TextStyle _headingTStyle = const TextStyle(
-    color: Colors.white,
+  final TextStyle _headingTStyle = TextStyle(
+    color: DTprimary().white,
     fontSize: 50,
     fontWeight: FontWeight.bold,
   );
@@ -41,7 +41,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
+    // final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return ExpansionPanelList(
       animationDuration: const Duration(seconds: 1),
@@ -66,7 +66,7 @@ class _CustomExpansionTileState extends State<CustomExpansionTile> {
           isExpanded: _expand,
           canTapOnHeader: true,
           body: Padding(
-            padding: ComponentData().defPad,
+            padding: ComponentData().defPad / 2,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,

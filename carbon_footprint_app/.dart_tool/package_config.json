@@ -398,6 +398,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "mobility_features",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/mobility_features-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
@@ -506,6 +512,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "simple_cluster",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/simple_cluster-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///home/saruo/flutter-dev/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -534,6 +546,12 @@
       "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "stats",
+      "rootUri": "file:///home/saruo/.pub-cache/hosted/pub.dev/stats-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "stream_channel",
@@ -704,7 +722,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-04-09T07:02:12.930443Z",
+  "generated": "2024-04-16T06:30:39.177937Z",
   "generator": "pub",
   "generatorVersion": "3.3.2"
 }

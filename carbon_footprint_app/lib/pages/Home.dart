@@ -1,8 +1,11 @@
 import 'package:carbon_footprint_app/components/CustomContainer.dart';
+import 'package:carbon_footprint_app/components/CustomNavbar.dart';
 import 'package:carbon_footprint_app/components/CustomSnackbar.dart';
 import 'package:carbon_footprint_app/constants.dart';
+import 'package:carbon_footprint_app/pages/UserDataForm.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class Home extends StatefulWidget {

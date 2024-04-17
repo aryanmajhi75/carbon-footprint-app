@@ -7,6 +7,8 @@ import 'package:carbon_footprint_app/dataClasses/expansionListData.dart';
 import 'package:carbon_footprint_app/dbHelper/dataModel.dart';
 import 'package:carbon_footprint_app/dbHelper/getData/applianceUserData.dart';
 import 'package:carbon_footprint_app/dbHelper/getData/vehicleUserData.dart';
+import 'package:carbon_footprint_app/pages/Home.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
@@ -138,13 +140,82 @@ class _YouState extends State<You> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Aryan's",
-                  style: TextStyle(
-                    color: DTprimary().white,
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold,
-                  ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "",
+                      style: TextStyle(
+                        color: DTprimary().white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Visibility(
+                      visible: idPresent == true ? true : false,
+                      child: ElevatedButton(
+                        style: ButtonStyle(
+                          padding: const MaterialStatePropertyAll(
+                            EdgeInsets.all(15),
+                          ),
+                          side: MaterialStatePropertyAll(
+                            BorderSide(
+                              color: DTprimary().error,
+                              width: 2,
+                            ),
+                          ),
+                          alignment: Alignment.center,
+                          visualDensity: VisualDensity.comfortable,
+                          backgroundColor: MaterialStatePropertyAll(
+                            DTprimary().onBody,
+                          ),
+                        ),
+                        onPressed: () {
+                          var authdata = Hive.box("authData");
+                          authdata.delete("id");
+                          if (authdata.get("id") == null) {
+                            setState(() {
+                              idPresent = false;
+                            });
+                          }
+                          CustomSnackbar.show(
+                            context,
+                            "logged out",
+                            DTprimary().error,
+                            "assets/icons/uncertain.png",
+                            screenWidth,
+                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => const Home(),
+                          //   ),
+                          // );
+                        },
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "assets/icons/logout.png",
+                              height: 30,
+                              width: 30,
+                              color: DTprimary().error,
+                            ),
+                            Text(
+                              "Logout",
+                              style: TextStyle(
+                                color: DTprimary().error,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 ClipRRect(
                   borderRadius: const BorderRadius.all(

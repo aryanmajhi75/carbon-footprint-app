@@ -250,6 +250,10 @@ mime
 3.2
 file:///home/saruo/.pub-cache/hosted/pub.dev/mime-1.0.5/
 file:///home/saruo/.pub-cache/hosted/pub.dev/mime-1.0.5/lib/
+mobility_features
+2.17
+file:///home/saruo/.pub-cache/hosted/pub.dev/mobility_features-4.0.1/
+file:///home/saruo/.pub-cache/hosted/pub.dev/mobility_features-4.0.1/lib/
 package_config
 2.12
 file:///home/saruo/.pub-cache/hosted/pub.dev/package_config-2.1.0/
@@ -322,6 +326,10 @@ shelf_web_socket
 2.17
 file:///home/saruo/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/
 file:///home/saruo/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4/lib/
+simple_cluster
+2.12
+file:///home/saruo/.pub-cache/hosted/pub.dev/simple_cluster-0.3.0/
+file:///home/saruo/.pub-cache/hosted/pub.dev/simple_cluster-0.3.0/lib/
 source_gen
 3.0
 file:///home/saruo/.pub-cache/hosted/pub.dev/source_gen-1.5.0/
@@ -338,6 +346,10 @@ stack_trace
 2.18
 file:///home/saruo/.pub-cache/hosted/pub.dev/stack_trace-1.11.1/
 file:///home/saruo/.pub-cache/hosted/pub.dev/stack_trace-1.11.1/lib/
+stats
+3.0
+file:///home/saruo/.pub-cache/hosted/pub.dev/stats-2.1.0/
+file:///home/saruo/.pub-cache/hosted/pub.dev/stats-2.1.0/lib/
 stream_channel
 2.19
 file:///home/saruo/.pub-cache/hosted/pub.dev/stream_channel-2.1.2/

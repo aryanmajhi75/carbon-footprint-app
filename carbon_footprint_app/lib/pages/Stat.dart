@@ -1,4 +1,5 @@
 import "package:carbon_footprint_app/components/CustomContainer.dart";
+import "package:carbon_footprint_app/components/CustomMobilityTile.dart";
 import "package:carbon_footprint_app/constants.dart";
 import "package:fl_chart/fl_chart.dart";
 import "package:flutter/material.dart";
@@ -72,6 +73,20 @@ class _StatState extends State<Stat> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Gap(screenHeight * 0.02),
+                  const Text(
+                    "Mobility History",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Gap(screenHeight * 0.02),
+                  Center(
+                    child: CustomMobilityTile(
+                      height: screenHeight,
+                      width: screenWidth,
+                    ),
+                  ),
                   Gap(screenHeight * 0.02),
                   const Text(
                     "Model Paramter Comparison",
