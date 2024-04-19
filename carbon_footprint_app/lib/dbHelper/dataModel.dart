@@ -240,3 +240,34 @@ class UserApplianceData {
     };
   }
 }
+
+class ApplianceUsage {
+  String id;
+  String brandName;
+  String type;
+  int hours;
+
+  ApplianceUsage({
+    required this.id,
+    required this.brandName,
+    required this.type,
+    required this.hours,
+  });
+
+  factory ApplianceUsage.fromJson(Map<String, dynamic> json) {
+    return ApplianceUsage(
+      id: json['id'],
+      brandName: json['brand_name'],
+      type: json['type'],
+      hours: json['hours'],
+    );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'brand_name': brandName,
+      'type': type,
+      'hours': hours,
+    };
+  }
+}

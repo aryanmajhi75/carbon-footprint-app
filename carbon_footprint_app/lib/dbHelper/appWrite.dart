@@ -7,7 +7,7 @@ Client client = Client();
 
 const DatabaseId = "65cb13a3230e21986535"; // Database ID
 const Appliancedata = "65db9fc3255821077338"; // Appliancedata Collection Id
-const Vehicledata = "65db9fb75eb8f7bd2658"; // Vehicledata Collection Id
+const Userapplianceusage = "65db9fb75eb8f7bd2658"; // Vehicledata Collection Id
 const Userelectricitydata =
     "65db9f97c01670e31558"; // Userelectricitydata Collection Id
 const Userdevicedata = "660fcde5cd0a6fb5908e"; // Userdevicedata Collection Id

@@ -141,38 +141,42 @@ class _HomeState extends State<Home> {
   }
 
   getAqiColor() {
-    if (_data[0].airQualityIndex <= 50 && _data[0].airQualityIndex >= 0) {
-      setState(() {
-        aqiColorIndi = DTprimary().good;
-      });
-    }
-
-    if (_data[0].airQualityIndex <= 100 && _data[0].airQualityIndex > 50) {
-      DTprimary().moderate;
-    }
-
-    if (_data[0].airQualityIndex <= 150 && _data[0].airQualityIndex >= 101) {
-      setState(() {
-        aqiColorIndi = DTprimary().unhealthySG;
-      });
-    }
-
-    if (_data[0].airQualityIndex <= 200 && _data[0].airQualityIndex >= 151) {
-      setState(() {
-        aqiColorIndi = DTprimary().unhealthy;
-      });
-    }
-
-    if (_data[0].airQualityIndex <= 300 && _data[0].airQualityIndex >= 201) {
-      setState(() {
-        aqiColorIndi = DTprimary().vUnhealthy;
-      });
-    }
-
-    if (_data[0].airQualityIndex <= 300 && _data[0].airQualityIndex >= 201) {
-      setState(() {
-        aqiColorIndi = DTprimary().hazardous;
-      });
+    switch (_data[0].airQualityLevel) {
+      case AirQualityLevel.UNKNOWN:
+        setState(() {
+          aqiColorIndi = DTprimary().white;
+        });
+        break;
+      case AirQualityLevel.GOOD:
+        setState(() {
+          aqiColorIndi = DTprimary().good;
+        });
+        break;
+      case AirQualityLevel.MODERATE:
+        setState(() {
+          aqiColorIndi = DTprimary().moderate;
+        });
+        break;
+      case AirQualityLevel.UNHEALTHY_FOR_SENSITIVE_GROUPS:
+        setState(() {
+          aqiColorIndi = DTprimary().unhealthySG;
+        });
+        break;
+      case AirQualityLevel.UNHEALTHY:
+        setState(() {
+          aqiColorIndi = DTprimary().unhealthy;
+        });
+        break;
+      case AirQualityLevel.VERY_UNHEALTHY:
+        setState(() {
+          aqiColorIndi = DTprimary().vUnhealthy;
+        });
+        break;
+      case AirQualityLevel.HAZARDOUS:
+        setState(() {
+          aqiColorIndi = DTprimary().hazardous;
+        });
+        break;
     }
   }
 
@@ -298,7 +302,8 @@ class _HomeState extends State<Home> {
                           CustomContainer(
                             height: screenHeight * 0.06,
                             width: screenWidth * 0.48,
-                            borderCol: aqiColorIndi,
+                            borderCol:
+                                _data.isNotEmpty ? aqiColorIndi : Colors.white,
                             color: Colors.transparent,
                             containerChild: Padding(
                               padding: ComponentData().defPad / 2,
@@ -316,11 +321,11 @@ class _HomeState extends State<Home> {
                                         ),
                                       )
                                     : Text(
-                                        "",
+                                        "Get AQI",
                                         style: TextStyle(
                                           decoration: TextDecoration.none,
-                                          color: DTprimary().error,
-                                          fontSize: 10,
+                                          color: DTprimary().white,
+                                          fontSize: 20,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),

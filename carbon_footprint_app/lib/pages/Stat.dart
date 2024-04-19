@@ -1,7 +1,9 @@
 import "package:carbon_footprint_app/components/CustomContainer.dart";
 import "package:carbon_footprint_app/components/CustomMobilityTile.dart";
 import "package:carbon_footprint_app/constants.dart";
+import "package:carbon_footprint_app/pages/Usage.dart";
 import "package:fl_chart/fl_chart.dart";
+import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 import "package:gap/gap.dart";
 
@@ -178,6 +180,44 @@ class _StatState extends State<Stat> {
                     child: CustomMobilityTile(
                       height: screenHeight,
                       width: screenWidth,
+                    ),
+                  ),
+                  Gap(screenHeight * 0.01),
+                  SizedBox(
+                    width: screenWidth * 0.9,
+                    child: FloatingActionButton.extended(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MyUsage(),
+                          ),
+                        );
+                      },
+                      // backgroundColor: DTprimary().onIconCol,
+                      label: SizedBox(
+                        height: screenHeight * 0.1,
+                        width: screenWidth * 0.9,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Check my usage",
+                              maxLines: 1,
+                              style: TextStyle(
+                                color: DTprimary().white,
+                                fontSize: 20,
+                              ),
+                            ),
+                            Image.asset(
+                              "assets/icons/progress.png",
+                              height: screenHeight * 0.05,
+                              color: DTprimary().white,
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                   Gap(screenHeight * 0.02),
